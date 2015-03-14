@@ -1,0 +1,166 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation</title>
+    <link rel="stylesheet" href="stylesheets/app.css" />
+    <script src="bower_components/modernizr/modernizr.js"></script>
+  </head>
+  <body>
+
+  <!--Top Nav Bar -->
+      <div class="row">
+        <div class="large-3 columns">
+          <h1><img src="http://placehold.it/400x100&text=Logo"/></h1>
+        </div>
+        <div class="large-3 columns">
+          <ul class="left button-group">
+          <li><a href="#" class="button">Link 1</a></li>
+          <li><a href="#" class="button">Link 2</a></li>
+          </ul>
+        </div>
+        <div class="large-3 columns">
+           <form>
+            <input type="text" placeholder="Search" required>
+            <input type="button" value="Search">
+          </form>
+        </div>
+        <div class="large-3 columns">
+          <ul class="right button-group">
+          <li><a href="#" class="button">Link 1</a></li>
+          <li><a href="#" class="button">Link 2</a></li>
+          </ul>
+        </div>
+      </div> 
+  <!-- Top Nav Bar end -->
+        
+
+ <!---Input Form Header-->
+        <div class="Row">
+            <div class="large-12 columns">
+              <div class="large-8 columns">
+                <h2>Create A Campaign</h2>
+              </div>
+              <div class="large-2 columns">
+                <a href="#" class="fancy radius button">Preview</a>
+              </div>
+              <div class="large-2 columns">
+                <a href="#" class="fancy radius button">Submit</a>
+              </div>
+            </div>
+        </div> 
+<!--Input Header End-->
+
+    
+
+ <!--Form-->     
+
+ <!--I'd like to create two columns of stacked divs (with the one large text field the sole div in the right column, all the smaller divs stacked on the left.) Because there is no styling done yet, everything is stacking from left to right. I looked around on StackExchange as well as W3 Schools, and it looks as if this can be done through CSS. Is that a correct deduction?--> 
+          <div> 
+            <div id="div1">
+                  <div class="large-4 columns">
+                    <label>Campaign Name
+                      <input type="text" placeholder="large-12.columns" />
+                    </label>
+                  </div>
+                  
+                  <div class="large-4 columns">
+                      <label>
+                        Goal Amount
+                      </label>
+                        <select>
+                          <option value="500">$500</option>
+                          <option value="1000">$1,000</option>
+                          <option value="2000">$2,000</option>
+                          <option value="5000">$5,000</option>
+                          <option value="10,000">$10,000</option>
+                        </select>
+<!--The following is supposed to be a form to enter "other amount" for a donation goal amount. Instead of spanning the 4-column width I am trying to specify, it breaks up into a small text field and a button on the other side of the column rather than next to it. I used documentation to create the combination text field/button, and it looked fine when it had the documentation example class of 12 columns, but seeing as I only want it to take up 4 columns, I changed the class – it seems to have screwed it up!-->
+                          <div class="row">
+                                <div class="row collapse">
+                                  <div class="large-4 columns">
+                                    <input type="text" placeholder="Other Amount">
+                                  </div>
+                                  <div class="large-4 columns">
+                                    <a href="#" class="button postfix">Enter</a>
+                                  </div>
+                                </div>
+                          </div>
+                    </div>
+                  </div>
+
+                  <div class="large-4 columns">
+                    <label>Campaign Duration</label>
+                    <ul class="button-group even-4">
+                      <li><a href="#" class="button">30 Days</a></li>
+                      <li><a href="#" class="button">60 Days</a></li>
+                      <li><a href="#" class="button">90 Days</a></li>
+                      <li><a href="#" class="button">120 Days</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="large-4 columns">
+                    <label>Brief Description
+                      <input type="text" placeholder="large-4.columns" />
+                    </label>
+                  </div>
+
+                  <div class="large-4 columns">
+                    <label>Media Upload
+                      <input type="text" placeholder="large-4.columns" />
+                    </label>
+                  </div>
+            </div>
+
+            <div id="div2">
+                <div class="large-8 columns">
+                    <label>Campaign Narrative
+                      <textarea placeholder="small-12.columns"></textarea>
+                    </label>
+                </div>
+            </div>
+
+          
+           </div>
+<!--Form End-->
+
+
+
+
+
+  <!-- Footer -->
+      <footer class="row">
+        <div class="large-12 columns">
+          <img src="">
+          <h3>MARVELMADE TAGLINE OR SOMETHING</h3>
+        </div>
+          <div class="large-4 columns">
+              <ul class="inline-list right">
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+              </ul>
+          </div>
+          <div class="large-3 columns">
+           <form>
+            <input type="text" placeholder="Search" required>
+            <input type="button" value="Search">
+           </form>
+          </div>
+          <div class="row">
+            <div class="large-4 columns">
+              <p>© 2015 Marvelmade</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+
+<!--Don't touch this--> 
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
