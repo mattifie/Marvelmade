@@ -15,9 +15,9 @@
           <h1><img src="http://placehold.it/400x100&text=Logo"/></h1>
         </div>
         <div class="large-3 columns">
-          <ul class="left button-group">
-          <li><a href="#" class="button">Link 1</a></li>
-          <li><a href="#" class="button">Link 2</a></li>
+          <ul class="inline-list left">
+          <li><a href="#">EXPLORE</a></li>
+          <li><a href="#">CREATE</a></li>
           </ul>
         </div>
         <div class="large-3 columns">
@@ -27,27 +27,236 @@
           </form>
         </div>
         <div class="large-3 columns">
-          <ul class="right button-group">
-          <li><a href="#" class="button">Link 1</a></li>
-          <li><a href="#" class="button">Link 2</a></li>
+          <ul class="inline-list right">
+          <li><a href="#">Sign Out</a></li>
+          <li><a href="#">My Account</a></li>
           </ul>
         </div>
       </div> 
   <!-- Top Nav Bar end -->
 
+  <!-- Campaign Summary -->
+  <div class="row">
 
+      <div class="large-12 columns">
+          <div class="large-8 columns">
+            <h3>Campaign Name</h3>
+          </div>
+          <div class="large-4 columns">
+            <a href="#" class="fancy radius button">Bookmark Campaign</a>
+          </div>
+      </div>
+
+
+      <div class="large-6 columns">
+        <img src="http://placehold.it/400x300&text=[img]"/>
+      </div>
+
+      <div class="large-6 columns">
+            <h5>About Campaign</h5>
+            <p>This is a six columns grid panel with an arbitrary height. Bacon ipsum dolor sit amet salami ham hock biltong ball tip drumstick sirloin pancetta meatball short loin.</p>
+            <div class="row">
+                    <label>Donate Now</label>
+                      <a href="#" class="button info" data-reveal-id="DonateTimeModal">Donate Time</a>
+                      <a href="#" class="button info" data-reveal-id="DonateMoneyModal">Donate Money</a>
+                    </div>
+                  </div>
+                </div>
+            </div> 
+      </div> 
+      
+      <div class="row">
+
+      <hr>
+              <div class="large-4 columns">
+                <img src="http://placehold.it/400x300&text=[img]"/>
+              </div>
+
+              <div class="large-6 columns">
+                <h3>Sharing is Caring</h3>
+                <p>Spread the word.</p>
+                <ul> 
+                  <li><a href="URL of Account on Social Network"><img src="URL of icon from File Manager" alt="Alt Text to be displayed in event that the image doesn't load"></a></li> 
+                  <li><a href="URL of Account on Social Network"><img src="URL of icon from File Manager" alt="Alt Text to be displayed in event that the image doesn't load"></a></li> 
+                  <li><a href="URL of Account on Social Network"><img src="URL of icon from File Manager" alt="Alt Text to be displayed in event that the image doesn't load"></a></li> 
+                </ul>
+              </div>
+      </div>
+
+      </div>
+    <hr/>
+<!-- Campaign Summary End -->
+
+<!-- Donate Time Modal -->
+  <div id="DonateTimeModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+    <h2>Want to donate time?</h2>
+    <p>Submit your email address, and you will be contacted shortly for next steps. Thanks a million!</p>
+          <div class="row">
+            <div class="large-6 columns">
+              <form>
+                <label>First Name</label>
+                <input type="text" placeholder="Louise" required>
+              </form>
+            </div>
+              <div class="large-6 columns">
+                <label>Last Name</label>
+                <input type="text" placeholder="Belcher" required>
+              </form>
+            </div>
+
+          <div>
+
+          <div class="large-12 columns">
+              <form>
+                <label>Email</label>
+                <input type="text" placeholder="louisebelcher@bobsburgers.com" required>
+              </form>
+          </div>
+          <a href="#" class="button success">Submit</a>
+          <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+      </div>
+  </div>
+<!-- Donate Time Modal End -->
+
+<!-- Donate Money Modal -->
+  <div id="DonateMoneyModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+      <h2>Donation Information</h2>
+            <div class="row">
+              <div class="large-8 columns">
+                <form>
+                  <label>Name on Card</label>
+                  <input type="text" placeholder="Louise Belcher" required>
+                </form>
+              </div>
+              <div class="large-4 columns">
+                <form>
+                  <label>Donation Amount</label>
+                  <input type="text" placeholder="$50.00" required>
+                </form>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="large-4 columns">
+                <form class="custom">
+                      <label>
+                        Payment Type
+                      </label>
+                        <select>
+                          <option value="Visa">Visa</option>
+                          <option value="Mastercard">Mastercard</option>
+                          <option value="American Express">American Express</option>
+                          <option value="Discover">Discover</option>
+                        </select>
+                </form>
+              </div>
+              <div class="large-8 columns">
+                <form>
+                  <label>Card Number</label>
+                  <input type="text" placeholder="4490 xxxx xxxx...." required>
+                </form>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="large-3 columns">
+                <form>
+                  <label>CVV</label>
+                  <input type="text" placeholder="xxx" required>
+                </form>
+              </div>
+              <div class="large-3 columns">
+                <form>
+<!-- Is a date picker something I should add via javascript or jquery? I found this code on github, as recommended by a Foundation forum: https://github.com/eternicode/bootstrap-datepicker-->
+                  <label>Expiration Date</label>
+                  <input type="text" placeholder="03/17/17" required>
+                </form>
+              </div>
+              <div class="large-6 columns">
+                <form>
+                  <label>Email Address (for a receipt!)</label>
+                  <input type="text" placeholder="anyone@gmail.com" required>
+                </form>
+              </div>
+            </div>
+              <a href="#" class="button success">Submit</a>
+              <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+          
+    </div>
+
+<!-- Donate Money Modal End -->
+
+<!-- Comment & Update Section // This content bleeds into both modals-->
+      <ul class="tabs" data-tab role="tablist">
+        <li class="tab-title active" role="presentational" ><a href="#panel2-1" role="tab" tabindex="0" aria-selected="true" controls="panel2-1">Updates</a></li>
+        <li class="tab-title" role="presentational" ><a href="#panel2-2" role="tab" tabindex="0"aria-selected="false" controls="panel2-2">Comments</a></li>
+      </ul>
+      <div class="tabs-content">
+        <section role="tabpanel" aria-hidden="false" class="content active" id="panel2-1">
+          <h2>First panel content goes here...</h2>
+
+          <!--As soon as I added the following content (taken from a Foundation feed template) the content of both tabs become one. If you look at the page in a web browser, tab 2's content is underneath the content of tab 1, which was not the case prior to adding the following. I attempted to add and subtract divs to see if it affected the content separation, but to no avail. Perhaps this would be a good question for Bloc overflow?-->
+
+             
+          <div class="row">
+            <div class="large-2 columns small-3"><img src="http://placehold.it/80x80&text=[img]"/></div>
+            <div class="large-10 columns">
+              <p><strong>Some Person said:</strong> Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
+              <ul class="inline-list">
+                <li><a href="">Reply</a></li>
+                <li><a href="">Share</a></li>
+              </ul>
+              <h6>2 Comments</h6>
+              <div class="row">
+                <div class="large-2 columns small-3"><img src="http://placehold.it/50x50&text=[img]"/></div>
+                <div class="large-10 columns"><p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit</p></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section role="tabpanel" aria-hidden="true" class="content" id="panel2-2">
+          <h2>Second panel content goes here...</h2>
+        </section>
+      </div>
+            
+          <hr/>
+     
+          <div class="row">
+            <div class="large-2 columns small-3"><img src="http://placehold.it/80x80&text=[img]"/></div>
+            <div class="large-10 columns">
+              <p><strong>Some Person said:</strong> Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
+              <ul class="inline-list">
+                <li><a href="">Reply</a></li>
+                <li><a href="">Share</a></li>
+              </ul>
+     
+     
+              <h6>2 Comments</h6>
+              <div class="row">
+                <div class="large-2 columns small-3"><img src="http://placehold.it/50x50&text=[img]"/></div>
+                <div class="large-10 columns"><p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit</p></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section role="tabpanel" aria-hidden="true" class="content" id="panel2-2">
+          <h2>Second panel content goes here...</h2>
+        </section>
+      </div>
+<!-- Comments & Updates End -->
 
   <!-- Footer -->
-      <footer class="row">
+       <footer class="row">
         <div class="large-12 columns">
+            <div class=large-12 columns>
           <img src="">
           <h3>MARVELMADE TAGLINE OR SOMETHING</h3>
         </div>
           <div class="large-4 columns">
               <ul class="inline-list right">
-                <li><a href="#">Link 1</a></li>
-                <li><a href="#">Link 2</a></li>
-                <li><a href="#">Link 3</a></li>
+                <li><a href="#" data-reveal-id="SignInModal">Sign In</a></li>
+                <li><a href="#" data-reveal-id="SignInModal">Sign Up</a></li>
+                <li><a href="#">Explore</a></li>
               </ul>
           </div>
           <div class="large-3 columns">
@@ -63,7 +272,45 @@
           </div>
         </div>
       </footer>
+<!-- Footer End-->
 
+ <!--Sign In/Sign Up Modal -->
+
+        <div id="SignInModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+          <div class="row">
+            <div class="large-5 columns">
+              <h2>Sign In</h2>
+              <a href="#" class="button">Login with Facebook</a>
+              <form>
+                <label>Email</label>
+                <input type="text" placeholder="Your email address goes here" required>
+              </form>
+                <label>Password</label>
+                <input type="text" placeholder="Your password goes here" required>
+              </form>
+              <a href="#" class="button">Sign In</a>
+            </div>
+            <div class="large-5 columns">
+              <h2>Sign Up</h2>
+              <a href="#" class="button">Sign Up with Facebook</a>
+              <form>
+                <label>Email</label>
+                <input type="text" placeholder="Your email address goes here" required>
+              </form>
+                <label>Password</label>
+                <input type="text" placeholder="Your password goes here" required>
+              </form>
+              </form>
+                <label>Confirm Password</label>
+                <input type="text" placeholder="One more time!" required>
+              </form>
+              <a href="#" class="button">Sign Up</a>
+            </div>
+          </div>
+          <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+        </div>
+
+    <!--Sign Up Modal End -->
 
 <!--Don't touch this--> 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>

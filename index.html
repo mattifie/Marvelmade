@@ -15,9 +15,9 @@
           <h1><img src="http://placehold.it/400x100&text=Logo"/></h1>
         </div>
         <div class="large-3 columns">
-          <ul class="left button-group">
-          <li><a href="#" class="button">Link 1</a></li>
-          <li><a href="#" class="button">Link 2</a></li>
+          <ul class="inline-list left">
+            <li><a href="#">EXPLORE</a></li>
+            <li><a href="#" data-reveal-id="CreateSignInModal">CREATE</a></li>
           </ul>
         </div>
         <div class="large-3 columns">
@@ -27,13 +27,180 @@
           </form>
         </div>
         <div class="large-3 columns">
-          <ul class="right button-group">
-          <li><a href="#" class="button">Link 1</a></li>
-          <li><a href="#" class="button">Link 2</a></li>
+          <ul class="inline-list right">
+          <li><a href="#" data-reveal-id="SignInModal">Sign In</a>
+          </li>
+          <li><a href="#" data-reveal-id="SignInModal">Sign Up</a>
+        </li>
           </ul>
         </div>
       </div> 
   <!-- Top Nav Bar end -->
+
+  <!-- "Create" Sign In Modal-->
+   <div id="CreateSignInModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+    <h2>Sign in or sign up to continue, please!</h2>
+          <div class="row">
+            <div class="large-5 columns">
+              <h4>Sign In</h4>
+              <a href="#" class="button">Login with Facebook</a>
+              <form>
+                <label>Email</label>
+                <input type="text" placeholder="Your email address goes here" required>
+              </form>
+                <label>Password</label>
+                <input type="text" placeholder="Your password goes here" required>
+              </form>
+              <a href="#" class="button">Sign In</a>
+            </div>
+            <div class="large-5 columns">
+              <h4>Sign Up</h4>
+              <a href="#" class="button">Sign Up with Facebook</a>
+              <form>
+                <label>Email</label>
+                <input type="text" placeholder="Your email address goes here" required>
+              </form>
+                <label>Password</label>
+                <input type="text" placeholder="Your password goes here" required>
+              </form>
+              </form>
+                <label>Confirm Password</label>
+                <input type="text" placeholder="One more time!" required>
+              </form>
+              <a href="#" class="button">Sign Up</a>
+            </div>
+          </div>
+          <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+        </div>
+  <!-- "Create" Sign In Modal End -->
+
+  <!--Sign In/Sign Up Modal -->
+
+        <div id="SignInModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+          <div class="row">
+            <div class="large-5 columns">
+              <h2>Sign In</h2>
+              <a href="#" class="button">Login with Facebook</a>
+              <form>
+                <label>Email</label>
+                <input type="text" placeholder="Your email address goes here" required>
+              </form>
+                <label>Password</label>
+                <input type="text" placeholder="Your password goes here" required>
+              </form>
+              <a href="#" class="button">Sign In</a>
+            </div>
+            <div class="large-5 columns">
+              <h2>Sign Up</h2>
+              <a href="#" class="button">Sign Up with Facebook</a>
+              <form>
+                <label>Email</label>
+                <input type="text" placeholder="Your email address goes here" required>
+              </form>
+                <label>Password</label>
+                <input type="text" placeholder="Your password goes here" required>
+              </form>
+              </form>
+                <label>Confirm Password</label>
+                <input type="text" placeholder="One more time!" required>
+              </form>
+              <a href="#" class="button">Sign Up</a>
+            </div>
+          </div>
+          <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+        </div>
+
+    <!--Sign Up Modal End -->
+
+    <!-- Below is a more complicated modal I found online but decided not to use for now because I don't fully understand its code -->
+    
+      <!-- div id="SignInModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+        <h1>Sign In or Sign Up</h1>
+        <div id="cd-login"> <!-- log in form -->
+        <!--form class="cd-form">
+          <p class="fieldset">
+            <label class="image-replace cd-email" for="signin-email">E-mail</label>
+            <input class="full-width has-padding has-border" id="signin-email" type="email" placeholder="E-mail">
+            <span class="cd-error-message">Error message here!</span>
+          </p>
+
+          <p class="fieldset">
+            <label class="image-replace cd-password" for="signin-password">Password</label>
+            <input class="full-width has-padding has-border" id="signin-password" type="text"  placeholder="Password">
+            <a href="#0" class="hide-password">Hide</a>
+            <span class="cd-error-message">Error message here!</span>
+          </p>
+
+          <p class="fieldset">
+            <input type="checkbox" id="remember-me" checked>
+            <label for="remember-me">Remember me</label>
+          </p>
+
+          <p class="fieldset">
+            <input class="full-width" type="submit" value="Login">
+          </p>
+        </form>
+        
+        <p class="cd-form-bottom-message"><a href="#0">Forgot your password?</a></p>
+        <!-- <a href="#0" class="cd-close-form">Close</a> -->
+      <!--/div> <!-- cd-login -->
+
+      <!--div id="cd-signup"> <!-- sign up form -->
+        <!--form class="cd-form">
+          <p class="fieldset">
+            <label class="image-replace cd-username" for="signup-username">Username</label>
+            <input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Username">
+            <span class="cd-error-message">Error message here!</span>
+          </p>
+
+          <p class="fieldset">
+            <label class="image-replace cd-email" for="signup-email">E-mail</label>
+            <input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="E-mail">
+            <span class="cd-error-message">Error message here!</span>
+          </p>
+
+          <p class="fieldset">
+            <label class="image-replace cd-password" for="signup-password">Password</label>
+            <input class="full-width has-padding has-border" id="signup-password" type="text"  placeholder="Password">
+            <a href="#0" class="hide-password">Hide</a>
+            <span class="cd-error-message">Error message here!</span>
+          </p>
+
+          <p class="fieldset">
+            <input type="checkbox" id="accept-terms">
+            <label for="accept-terms">I agree to the <a href="#0">Terms</a></label>
+          </p>
+
+          <p class="fieldset">
+            <input class="full-width has-padding" type="submit" value="Create account">
+          </p>
+        </form>
+
+        <!-- <a href="#0" class="cd-close-form">Close</a> -->
+      </div> <!-- cd-signup -->
+
+      <!--div id="cd-reset-password"> <!-- reset password form -->
+        <!--p class="cd-form-message">Lost your password? Please enter your email address. You will receive a link to create a new password.</p>
+
+        <!--form class="cd-form">
+          <p class="fieldset">
+            <label class="image-replace cd-email" for="reset-email">E-mail</label>
+            <input class="full-width has-padding has-border" id="reset-email" type="email" placeholder="E-mail">
+            <span class="cd-error-message">Error message here!</span>
+          </p>
+
+          <p class="fieldset">
+            <input class="full-width has-padding" type="submit" value="Reset password">
+          </p>
+        </form>
+
+        <p class="cd-form-bottom-message"><a href="#0">Back to log-in</a></p>
+      </div> <!-- cd-reset-password -->
+      <!--a href="#0" class="cd-close-form">Close</a>
+    </div> <!-- cd-user-modal-container -->
+  <!-- /div> <!-- cd-user-modal -->
+        <!--a class="close-reveal-modal" aria-label="Close">&#215;</a>
+      </div -->
 
 <!-- Hero Image Slider -->
       <div class="row">
@@ -117,9 +284,9 @@
         </div>
           <div class="large-4 columns">
               <ul class="inline-list right">
-                <li><a href="#">Link 1</a></li>
-                <li><a href="#">Link 2</a></li>
-                <li><a href="#">Link 3</a></li>
+                <li><a href="#" data-reveal-id="SignInModal">Sign In</a></li>
+                <li><a href="#" data-reveal-id="SignInModal">Sign Up</a></li>
+                <li><a href="#">Explore</a></li>
               </ul>
           </div>
           <div class="large-3 columns">
