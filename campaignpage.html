@@ -10,29 +10,37 @@
   <body>
 
   <!--Top Nav Bar -->
-      <div class="row">
+   <nav>
+      <div class="row" id="nav">
         <div class="large-3 columns">
-          <h1><img src="http://placehold.it/400x100&text=Logo"/></h1>
+          <h1><img src="images/MarvelmadeLogo_Small.png"/></h1>
         </div>
         <div class="large-3 columns">
           <ul class="inline-list left">
-          <li><a href="#">EXPLORE</a></li>
-          <li><a href="#">CREATE</a></li>
+            <li><a href="#">EXPLORE</a></li>
+            <li><a href="#" data-reveal-id="CreateSignInModal">CREATE</a></li>
           </ul>
         </div>
-        <div class="large-3 columns">
-           <form>
-            <input type="text" placeholder="Search" required>
-            <input type="button" value="Search">
-          </form>
+        <div class="large-4 columns">
+              <div class="row collapse postfix-round">
+                <div class="small-9 columns">
+                  <input type="text" placeholder="Search Away">
+                </div>
+                <div class="small-3 columns">
+                  <a href="#" class="button postfix">GO</a>
+                </div>
+              </div>
         </div>
-        <div class="large-3 columns">
+        <div class="large-2 columns">
           <ul class="inline-list right">
-          <li><a href="#">Sign Out</a></li>
-          <li><a href="#">My Account</a></li>
+          <li><a href="#" data-reveal-id="SignInModal">Sign In</a>
+          </li>
+          <li><a href="#" data-reveal-id="SignInModal">Sign Up</a>
+        </li>
           </ul>
         </div>
-      </div> 
+      </div>
+      </nav> 
   <!-- Top Nav Bar end -->
 
   <!-- Campaign Summary -->
