@@ -9157,6 +9157,7 @@ th.hide-for-touch {
     display: table-cell !important;
   }
 }
+<<<<<<< HEAD
 /* line 15, ../scss/_overrides.scss */
 h1 {
   font-family: "Cooper Std", Chunkfive Roman, serif;
@@ -9196,15 +9197,29 @@ nav {
 }
 
 /* line 47, ../scss/_overrides.scss */
+=======
+/* Navigation*/
+/* line 14, ../scss/_overrides.scss */
+nav {
+  background-color: #69d2e7;
+}
+
+/* line 18, ../scss/_overrides.scss */
+>>>>>>> 618e533707abc23516b36e6a1f7ab725b83caf4a
 ul.inline-list.left {
   margin-top: 65px;
   padding-right: -20px;
 }
+<<<<<<< HEAD
 /* line 51, ../scss/_overrides.scss */
+=======
+/* line 22, ../scss/_overrides.scss */
+>>>>>>> 618e533707abc23516b36e6a1f7ab725b83caf4a
 ul.inline-list.left li {
   font-family: "Gibson", Arial Black, sans-serif;
   font-size: 14px;
 }
+<<<<<<< HEAD
 /* line 55, ../scss/_overrides.scss */
 ul.inline-list.left li a {
   color: #262626;
@@ -9216,10 +9231,27 @@ ul.inline-list.left li a a:hover {
 }
 
 /* line 66, ../scss/_overrides.scss */
+=======
+/* line 26, ../scss/_overrides.scss */
+ul.inline-list.left li a {
+  color: #262626;
+}
+/* line 29, ../scss/_overrides.scss */
+ul.inline-list.left li a:hover {
+  color: #fa6949;
+}
+
+/* to solve the above issue, I simply broke it out from the nested style you were working on. not ideal, but functional */
+/* ul.inline-list.left li a:hover, ul.inline-list.right li a:hover {
+  color: $secondary-color;
+} */
+/* line 42, ../scss/_overrides.scss */
+>>>>>>> 618e533707abc23516b36e6a1f7ab725b83caf4a
 div.row.collapse.postfix-round {
   margin-top: 45px;
   margin-left: -40px;
 }
+<<<<<<< HEAD
 /* line 70, ../scss/_overrides.scss */
 div.row.collapse.postfix-round input {
   font-family: "Gibson", Arial Black, sans-serif;
@@ -9235,10 +9267,28 @@ ul.inline-list.right {
   margin-top: 65px;
 }
 /* line 83, ../scss/_overrides.scss */
+=======
+/* line 46, ../scss/_overrides.scss */
+div.row.collapse.postfix-round input {
+  font-family: "Gibson", Arial Black, sans-serif;
+}
+/* line 50, ../scss/_overrides.scss */
+div.row.collapse.postfix-round a.button.postfix {
+  background-color: #a7dbd8;
+  color: #262626;
+}
+
+/* line 56, ../scss/_overrides.scss */
+ul.inline-list.right {
+  margin-top: 65px;
+}
+/* line 59, ../scss/_overrides.scss */
+>>>>>>> 618e533707abc23516b36e6a1f7ab725b83caf4a
 ul.inline-list.right li {
   font-family: "Gibson", Arial Black, sans-serif;
   font-size: 14px;
 }
+<<<<<<< HEAD
 /* line 87, ../scss/_overrides.scss */
 ul.inline-list.right li a {
   color: #262626;
@@ -9440,3 +9490,13 @@ div#copyright.large-3.columns {
 div#footer.large-5.columns {
   margin: auto;
 }
+=======
+/* line 63, ../scss/_overrides.scss */
+ul.inline-list.right li a {
+  color: #262626;
+}
+/* line 66, ../scss/_overrides.scss */
+ul.inline-list.right li a:hover {
+  color: #fa6949;
+}
+>>>>>>> 618e533707abc23516b36e6a1f7ab725b83caf4a
