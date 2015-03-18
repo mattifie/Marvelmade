@@ -26,7 +26,7 @@ ul.inline-list.left {
         a {
         color: $text-color;
 
-          a:hover {
+          &:hover {
           color: $secondary-color;
           }
         }
@@ -35,9 +35,9 @@ ul.inline-list.left {
 
 /* to solve the above issue, I simply broke it out from the nested style you were working on. not ideal, but functional */
 
-ul.inline-list.left li a:hover, ul.inline-list.right li a:hover {
+/* ul.inline-list.left li a:hover, ul.inline-list.right li a:hover {
   color: $secondary-color;
-}
+} */
 
 div.row.collapse.postfix-round {
   margin-top: 45px;
@@ -62,6 +62,10 @@ ul.inline-list.right {
   
     a {
     color: $text-color;
+
+      &:hover {
+        color: $secondary-color;
+      }
     }
   }
 }
