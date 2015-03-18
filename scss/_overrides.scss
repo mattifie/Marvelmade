@@ -26,13 +26,18 @@ ul.inline-list.left {
         a {
         color: $text-color;
 
-/* The hover selector isn't having an effect. */
           a:hover {
           color: $secondary-color;
           }
         }
       }
     }
+
+/* to solve the above issue, I simply broke it out from the nested style you were working on. not ideal, but functional */
+
+ul.inline-list.left li a:hover, ul.inline-list.right li a:hover {
+  color: $secondary-color;
+}
 
 div.row.collapse.postfix-round {
   margin-top: 45px;
