@@ -4,15 +4,44 @@ $primary-accent: #a7dbd8;
 $secondary-accent: #faa16d;
 $background-color: #e0e4cc;
 $text-color: #262626;
+$include-html-button-classes: $include-html-classes;
 
 $main-typeface: "Gibson", Arial Black, sans-serif; 
 $heading-typeface: "Cooper Std", Chunkfive Roman, serif; 
-$secondary-typeface: "Alternate Gothic No. 2", Copperplate Gothic Bold, Arial, sans-serif;
+$secondary-typeface: "Alternate Gothic No. 2", Gibson, Copperplate Gothic Bold, Arial, sans-serif;
+
+
+
+h1 {
+  font-family:$heading-typeface;
+}
+
+h2 {
+  font-family:$heading-typeface;
+  font-size: 18px;
+}
+
+h3 {
+  font-family:$secondary-typeface;
+}
+
+h4 {
+  font-family:$secondary-typeface;
+}
+
+h5 {
+  font-family:$main-typeface;
+}
+
+p {
+  font-family: $main-typeface;
+}
 
 /* Navigation*/
 
 nav {
-  background-color: $primary-color;
+  background-color: $primary-accent;
+  border-bottom: 5px solid $primary-color;
   }
 
 ul.inline-list.left {
@@ -43,7 +72,7 @@ div.row.collapse.postfix-round {
   }
 
   a.button.postfix {
-  background-color: $primary-accent;
+  background-color: $primary-color;
   color: $text-color;
   }
 }
@@ -60,3 +89,165 @@ ul.inline-list.right {
     }
   }
 }
+
+/* Hero Section */
+
+div#header {
+  background-image: url('../images/HeroImage.jpg');
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  min-height: 700px; 
+  opacity: .8;
+}
+
+.overlay {
+  height: 700px;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(250, 105, 73, .5);
+}
+
+div#marketing.large-10.small-centered.columns {
+  text-align: center; 
+  padding-top: 350px;
+
+  h1 {
+    color: #fff;
+    text-shadow: 3px 3px #000;
+
+/* H4 is not responsive to changes... */
+  h4 {
+    font-size: 50px;
+    color: #000;
+
+/* How do I code this in css so that styling is applied to the button? */
+  #marketing.button {
+    color:$secondary-color;
+  }
+  }
+}
+}
+
+/* Featured Campaign */
+
+  div#featured {
+      background-color:$background-color;
+      border-top: 5px solid $primary-color;
+      border-bottom: 5px solid $primary-color;
+      height: 550px;
+
+  .container {
+    padding-top: 70px;
+  
+  /* How do I change this font size? */
+    h2 {
+    text-align: center;
+    font-size: 36px;
+    }
+    }
+  }
+
+  div#feature_photo {
+    background-image: url('../images/featuredphoto.jpg');
+    background-position: center; 
+    border: solid 5px $primary-color;
+    height: 300px;
+    margin-left: 25px;
+    width: 400px;
+}
+
+div#featuretext.large-6.columns {
+  margin-left: -25px;
+}
+
+a#featurebutton.custom-button-class {
+  margin-left: 100px;
+  radius: 20px;
+  $button-font-family: $secondary-typeface;
+}
+
+/* How to change radius- see documentation. If you make a custom button, can you adjust margins, etc?*/
+.custom-button-class {
+  @include button(
+    $bg:$secondary-color
+  );
+}
+
+/* Popular Campaigns */
+
+div#popular.container {
+  background-color: rgba(224, 228, 204, .5);
+  height: 640px;
+
+  .row {
+    padding-top: 50px;
+
+  h4 {
+    text-align: center;
+    }
+  }
+}  
+
+div#popular p {
+  text-align: center;
+}
+
+.campaign_photo {
+  background-position: center; 
+  border: solid 5px $primary-color;
+  height: 250px;
+  margin-bottom: 10px;
+  width: 300px;
+  
+}
+
+div#campaign_1.campaign_photo {
+  background-image: url('../images/CampaignOne.jpg');
+  background-position: center; 
+}
+
+div#campaign_2.campaign_photo {
+  background-image: url('../images/CampaignTwo.jpg');
+  background-position: center; 
+}
+
+div#campaign_3.campaign_photo {
+  background-image: url('../images/CampaignThree.jpg');
+  background-position: center; 
+}
+
+/* Footer */
+
+
+footer.container {
+  background-color: $primary-accent;
+  border-top: 5px solid $primary-color;
+  height: 350px; 
+  padding-top: 50px;
+  }
+
+footer#tagline.large-7.small-centered.columns {
+    margin-left: 20px;
+    text-align: center;
+}
+
+div#footer.large-3.columns {
+  margin-left: -50px;
+  margin-right: 50px;
+  margin-bottom: -50px;
+}
+
+div#copyright.large-3.columns {
+  margin-top: 65px;
+  margin-right: -50px;
+}
+
+div#footer.large-5.columns {
+  margin: auto;
+}
+
+
+
+
+
