@@ -12,6 +12,7 @@ $secondary-typeface: "Alternate Gothic No. 2", Gibson, Copperplate Gothic Bold, 
 
 
 
+
 h1 {
   font-family:$heading-typeface;
 }
@@ -38,6 +39,23 @@ h6 {
 }
 
 p {
+  font-family: $main-typeface;
+}
+
+input {
+  font-family: $main-typeface;
+}
+
+label {
+  font-family: $main-typeface;
+  font-size: 22px;
+}
+
+.button {
+  font-family: $main-typeface;
+}
+
+select {
   font-family: $main-typeface;
 }
 
@@ -140,9 +158,10 @@ div#marketing.large-10.small-centered.columns {
       border-top: 5px solid $primary-color;
       border-bottom: 5px solid $primary-color;
       height: 550px;
+      padding-top:70px;
 
-  .container {
-    padding-top: 70px;
+
+
   
   /* How do I change this font size? */
     h2 {
@@ -150,7 +169,7 @@ div#marketing.large-10.small-centered.columns {
     font-size: 36px;
     }
     }
-  }
+  
 
   div#feature_photo {
     background-image: url('../images/featuredphoto.jpg');
@@ -318,29 +337,39 @@ div#footer.large-5.columns {
 
 #create {
   background-color: $background-color;
-  height: 100px;
 }
 
 #create_heading {
   padding-top: 25px;
+  padding-bottom: 25px;
 }
 
-#container_right {
-  float: right;
-  display: inline;
-
-  textarea {
-  height: 500px;
-  padding-right: 50px;
-  }
+.container {
+  background-color: $background-color;
+  height: 1000px;
 }
 
-.container_left {
-  float: left;
-  display: block;
-  padding-left: 50px;
-  width: 100%;
+textarea {
+  border: 5px solid $primary-color;
+  height: 900px;
+  
 }
 
+input#description {
+  border: 5px solid $primary-color;
+  height: 200px;
+
+}
+
+input#media {
+  border: 5px solid $primary-color;
+  height: 200px;
+}
+
+span.numbers {
+  font-family: $heading-typeface;
+  font-size: 30px;
+  margin-right: 10px;
+}
 
 

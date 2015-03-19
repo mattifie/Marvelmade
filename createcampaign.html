@@ -45,11 +45,11 @@
         
 
  <!---Input Form Header-->
-        <div class="Row">
-          <div class="container" id="create">
+        <div id="create">
+          <div class="row">
             <div class="large-12 columns" id="create_heading">
               <div class="large-8 columns">
-                <h1>Create A Campaign</h1>
+              <h1>Create A Campaign</h1>
               </div>
               <div class="large-2 columns">
                 <a href="#" class="fancy radius button">Preview</a>
@@ -62,88 +62,55 @@
         </div> 
 <!--Input Header End-->
 
-    
-
- <!--Form-->     
-          <div> 
-            <div class="container_left">
-                  <div class="large-4 columns">
-                    <label>Campaign Name
-                      <input type="text" placeholder="large-12.columns" />
-                    </label>
-                  </div>
-            </div>
-                  
-                  <div class="large-4 columns">
-                    <div class="container_left">
-                      <label>
-                        Goal Amount
-                      </label>
-                        <select>
-                          <option value="500">$500</option>
-                          <option value="1000">$1,000</option>
-                          <option value="2000">$2,000</option>
-                          <option value="5000">$5,000</option>
-                          <option value="10,000">$10,000</option>
-                        </select>
-                      </div>
-                  </div>
-<!--The following is supposed to be a form to enter "other amount" for a donation goal amount. Instead of spanning the 4-column width I am trying to specify, it breaks up into a small text field and a button on the other side of the column rather than next to it. I used documentation to create the combination text field/button, and it looked fine when it had the documentation example class of 12 columns, but seeing as I only want it to take up 4 columns, I changed the class – it seems to have screwed it up!-->
-                    <div class="container_left">
-                      <div class="row collapse">
-                          <div class="large-4 columns">
-                              <input type="text" placeholder="Other Amount">
-                          </div>
-                          <div class="large-4 columns">
-                          <a href="#" class="button postfix">Enter</a>
-                          </div>
-                      </div>
-                    </div>
-                    
-                <div class="container_left">
-                  <div class="large-4 columns">
-                      <label>Campaign Duration</label>
+<section class="container">
+  <div class="row">
+    <div class="large-4 columns">
+      <div class="working">
+        <label><span class="numbers">1</span>Campaign Name
+          <input type="text" placeholder="large-12.columns" />
+        </label>
+        <label><span class="numbers">2</span>
+          Goal Amount
+        </label>
+        <select>
+          <option value="500">$500</option>
+          <option value="1000">$1,000</option>
+          <option value="2000">$2,000</option>
+          <option value="5000">$5,000</option>
+          <option value="10,000">$10,000</option>
+        </select>
+      
+          <div class="row collapse">
+              <input type="text" placeholder="Other Amount">
+              <a href="#" class="button postfix">Enter</a>
+          </div>
+               <label><span class="numbers">3</span>Campaign Duration</label>
                       <ul class="button-group even-4">
                         <li><a href="#" class="button">30 Days</a></li>
                         <li><a href="#" class="button">60 Days</a></li>
                         <li><a href="#" class="button">90 Days</a></li>
                         <li><a href="#" class="button">120 Days</a></li>
                       </ul>
-                    </div>
-                  </div>
-
-                <div class="container_left">
-                  <div class="large-4 columns">
-                    <label>Brief Description
-                      <input type="text" placeholder="large-4.columns" />
-                    </label>
-                   </div>
-                  </div>
-
-                <div class="container_left">
-                  <div class="large-4 columns">
-                    <label>Media Upload
-                      <input type="text" placeholder="large-4.columns" />
-                    </label>
-                  </div>
-                </div>
+              <label><span class="numbers">4</span>Brief Description
+                <input type="text" id="description" placeholder="Try for one-sentence pitch" />
+              </label>
+              <label><span class="numbers">5</span>Media Upload
+                <input type="text" id="media" placeholder="Drop your fabulous files here." />
+              </label>
+          </div>
+      <!-- left column stuff -->
+          </div>
+            <div class="large-8 columns">
+              <div class="working">
+                <label><span class="numbers">6</span>Campaign Narrative
+                  <textarea placeholder="Tell us your story, details and all."></textarea>
+                </label>
+              </div>
             </div>
-
-            <div>
-                <div class="large-6 columns" id="container_right">
-                    <label>Campaign Narrative
-                      <textarea placeholder="small-12.columns"></textarea>
-                    </label>
-                </div>
-            </div>
-
-          
-           </div>
-<!--Form End-->
-
-
-
-
+      <!-- right column stuff -->
+    </div>
+</section>
+    
 
   <!-- Footer -->
         <footer class="container">
