@@ -9157,7 +9157,6 @@ th.hide-for-touch {
     display: table-cell !important;
   }
 }
-<<<<<<< HEAD
 /* line 15, ../scss/_overrides.scss */
 h1 {
   font-family: "Cooper Std", Chunkfive Roman, serif;
@@ -9185,117 +9184,73 @@ h5 {
 }
 
 /* line 36, ../scss/_overrides.scss */
+h6 {
+  font-family: "Cooper Std", Chunkfive Roman, serif;
+}
+
+/* line 40, ../scss/_overrides.scss */
 p {
   font-family: "Gibson", Arial Black, sans-serif;
 }
 
 /* Navigation*/
-/* line 42, ../scss/_overrides.scss */
+/* line 46, ../scss/_overrides.scss */
 nav {
   background-color: #a7dbd8;
   border-bottom: 5px solid #69d2e7;
 }
 
-/* line 47, ../scss/_overrides.scss */
-=======
-/* Navigation*/
-/* line 14, ../scss/_overrides.scss */
-nav {
-  background-color: #69d2e7;
-}
-
-/* line 18, ../scss/_overrides.scss */
->>>>>>> 618e533707abc23516b36e6a1f7ab725b83caf4a
+/* line 51, ../scss/_overrides.scss */
 ul.inline-list.left {
   margin-top: 65px;
   padding-right: -20px;
 }
-<<<<<<< HEAD
-/* line 51, ../scss/_overrides.scss */
-=======
-/* line 22, ../scss/_overrides.scss */
->>>>>>> 618e533707abc23516b36e6a1f7ab725b83caf4a
+/* line 55, ../scss/_overrides.scss */
 ul.inline-list.left li {
   font-family: "Gibson", Arial Black, sans-serif;
   font-size: 14px;
 }
-<<<<<<< HEAD
-/* line 55, ../scss/_overrides.scss */
+/* line 59, ../scss/_overrides.scss */
 ul.inline-list.left li a {
   color: #262626;
   /* The hover selector isn't having an effect. */
 }
-/* line 59, ../scss/_overrides.scss */
+/* line 63, ../scss/_overrides.scss */
 ul.inline-list.left li a a:hover {
   color: #fa6949;
 }
 
-/* line 66, ../scss/_overrides.scss */
-=======
-/* line 26, ../scss/_overrides.scss */
-ul.inline-list.left li a {
-  color: #262626;
-}
-/* line 29, ../scss/_overrides.scss */
-ul.inline-list.left li a:hover {
-  color: #fa6949;
-}
-
-/* to solve the above issue, I simply broke it out from the nested style you were working on. not ideal, but functional */
-/* ul.inline-list.left li a:hover, ul.inline-list.right li a:hover {
-  color: $secondary-color;
-} */
-/* line 42, ../scss/_overrides.scss */
->>>>>>> 618e533707abc23516b36e6a1f7ab725b83caf4a
+/* line 70, ../scss/_overrides.scss */
 div.row.collapse.postfix-round {
   margin-top: 45px;
   margin-left: -40px;
 }
-<<<<<<< HEAD
-/* line 70, ../scss/_overrides.scss */
+/* line 74, ../scss/_overrides.scss */
 div.row.collapse.postfix-round input {
   font-family: "Gibson", Arial Black, sans-serif;
 }
-/* line 74, ../scss/_overrides.scss */
+/* line 78, ../scss/_overrides.scss */
 div.row.collapse.postfix-round a.button.postfix {
   background-color: #69d2e7;
   color: #262626;
 }
 
-/* line 80, ../scss/_overrides.scss */
+/* line 84, ../scss/_overrides.scss */
 ul.inline-list.right {
   margin-top: 65px;
 }
-/* line 83, ../scss/_overrides.scss */
-=======
-/* line 46, ../scss/_overrides.scss */
-div.row.collapse.postfix-round input {
-  font-family: "Gibson", Arial Black, sans-serif;
-}
-/* line 50, ../scss/_overrides.scss */
-div.row.collapse.postfix-round a.button.postfix {
-  background-color: #a7dbd8;
-  color: #262626;
-}
-
-/* line 56, ../scss/_overrides.scss */
-ul.inline-list.right {
-  margin-top: 65px;
-}
-/* line 59, ../scss/_overrides.scss */
->>>>>>> 618e533707abc23516b36e6a1f7ab725b83caf4a
+/* line 87, ../scss/_overrides.scss */
 ul.inline-list.right li {
   font-family: "Gibson", Arial Black, sans-serif;
   font-size: 14px;
 }
-<<<<<<< HEAD
-/* line 87, ../scss/_overrides.scss */
+/* line 91, ../scss/_overrides.scss */
 ul.inline-list.right li a {
   color: #262626;
 }
 
 /* Hero Section */
-/* line 95, ../scss/_overrides.scss */
+/* line 99, ../scss/_overrides.scss */
 div#header {
   background-image: url("../images/HeroImage.jpg");
   background-size: cover;
@@ -9305,7 +9260,7 @@ div#header {
   opacity: .8;
 }
 
-/* line 104, ../scss/_overrides.scss */
+/* line 108, ../scss/_overrides.scss */
 .overlay {
   height: 700px;
   width: 100%;
@@ -9313,48 +9268,48 @@ div#header {
   background-color: rgba(250, 105, 73, 0.5);
 }
 
-/* line 111, ../scss/_overrides.scss */
+/* line 115, ../scss/_overrides.scss */
 div#marketing.large-10.small-centered.columns {
   text-align: center;
   padding-top: 350px;
 }
-/* line 115, ../scss/_overrides.scss */
+/* line 119, ../scss/_overrides.scss */
 div#marketing.large-10.small-centered.columns h1 {
   color: #fff;
   text-shadow: 3px 3px #000;
   /* H4 is not responsive to changes... */
 }
-/* line 120, ../scss/_overrides.scss */
+/* line 124, ../scss/_overrides.scss */
 div#marketing.large-10.small-centered.columns h1 h4 {
   font-size: 50px;
   color: #000;
   /* How do I code this in css so that styling is applied to the button? */
 }
-/* line 125, ../scss/_overrides.scss */
+/* line 129, ../scss/_overrides.scss */
 div#marketing.large-10.small-centered.columns h1 h4 #marketing.button {
   color: #fa6949;
 }
 
 /* Featured Campaign */
-/* line 134, ../scss/_overrides.scss */
+/* line 138, ../scss/_overrides.scss */
 div#featured {
   background-color: #e0e4cc;
   border-top: 5px solid #69d2e7;
   border-bottom: 5px solid #69d2e7;
   height: 550px;
 }
-/* line 140, ../scss/_overrides.scss */
+/* line 144, ../scss/_overrides.scss */
 div#featured .container {
   padding-top: 70px;
   /* How do I change this font size? */
 }
-/* line 144, ../scss/_overrides.scss */
+/* line 148, ../scss/_overrides.scss */
 div#featured .container h2 {
   text-align: center;
   font-size: 36px;
 }
 
-/* line 151, ../scss/_overrides.scss */
+/* line 155, ../scss/_overrides.scss */
 div#feature_photo {
   background-image: url("../images/featuredphoto.jpg");
   background-position: center;
@@ -9364,19 +9319,19 @@ div#feature_photo {
   width: 400px;
 }
 
-/* line 160, ../scss/_overrides.scss */
+/* line 164, ../scss/_overrides.scss */
 div#featuretext.large-6.columns {
   margin-left: -25px;
 }
 
-/* line 164, ../scss/_overrides.scss */
+/* line 168, ../scss/_overrides.scss */
 a#featurebutton.custom-button-class {
   margin-left: 100px;
   radius: 20px;
 }
 
 /* How to change radius- see documentation. If you make a custom button, can you adjust margins, etc?*/
-/* line 171, ../scss/_overrides.scss */
+/* line 175, ../scss/_overrides.scss */
 .custom-button-class {
   border-style: solid;
   border-width: 0;
@@ -9412,26 +9367,26 @@ a#featurebutton.custom-button-class {
 }
 
 /* Popular Campaigns */
-/* line 179, ../scss/_overrides.scss */
+/* line 183, ../scss/_overrides.scss */
 div#popular.container {
   background-color: rgba(224, 228, 204, 0.5);
   height: 640px;
 }
-/* line 183, ../scss/_overrides.scss */
+/* line 187, ../scss/_overrides.scss */
 div#popular.container .row {
   padding-top: 50px;
 }
-/* line 186, ../scss/_overrides.scss */
+/* line 190, ../scss/_overrides.scss */
 div#popular.container .row h4 {
   text-align: center;
 }
 
-/* line 192, ../scss/_overrides.scss */
-div#popular p {
+/* line 196, ../scss/_overrides.scss */
+div#popular p, h5 {
   text-align: center;
 }
 
-/* line 196, ../scss/_overrides.scss */
+/* line 200, ../scss/_overrides.scss */
 .campaign_photo {
   background-position: center;
   border: solid 5px #69d2e7;
@@ -9440,26 +9395,98 @@ div#popular p {
   width: 300px;
 }
 
-/* line 205, ../scss/_overrides.scss */
+/* line 209, ../scss/_overrides.scss */
 div#campaign_1.campaign_photo {
   background-image: url("../images/CampaignOne.jpg");
   background-position: center;
 }
 
-/* line 210, ../scss/_overrides.scss */
+/* line 214, ../scss/_overrides.scss */
 div#campaign_2.campaign_photo {
   background-image: url("../images/CampaignTwo.jpg");
   background-position: center;
 }
 
-/* line 215, ../scss/_overrides.scss */
+/* line 219, ../scss/_overrides.scss */
 div#campaign_3.campaign_photo {
   background-image: url("../images/CampaignThree.jpg");
   background-position: center;
 }
 
+/* How We Work */
+/* line 226, ../scss/_overrides.scss */
+div#work {
+  background-color: #e0e4cc;
+  border-top: solid 5px #fa6949;
+  height: 400px;
+}
+
+/* line 232, ../scss/_overrides.scss */
+p {
+  text-align: center h5;
+  text-align-text-align: center;
+}
+
+/* line 240, ../scss/_overrides.scss */
+div#money img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  vertical-align: middle;
+}
+
+/* line 248, ../scss/_overrides.scss */
+div#time img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 254, ../scss/_overrides.scss */
+div#startimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 260, ../scss/_overrides.scss */
+div#money p {
+  text-align: center;
+}
+
+/* line 264, ../scss/_overrides.scss */
+div#time p {
+  text-align: center;
+}
+
+/* line 268, ../scss/_overrides.scss */
+div#start p {
+  text-align: center;
+}
+
+/* line 272, ../scss/_overrides.scss */
+div#money.large-4.columns h6 {
+  text-align: center;
+}
+
+/* line 276, ../scss/_overrides.scss */
+div#time.large-4.columns h6 {
+  text-align: center;
+}
+
+/* line 280, ../scss/_overrides.scss */
+div#start.large-4.columns h6 {
+  text-align: center;
+}
+
+/* line 284, ../scss/_overrides.scss */
+div#how_we_work.row {
+  padding-top: 50px;
+}
+
 /* Footer */
-/* line 223, ../scss/_overrides.scss */
+/* line 290, ../scss/_overrides.scss */
 footer.container {
   background-color: #a7dbd8;
   border-top: 5px solid #69d2e7;
@@ -9467,36 +9494,26 @@ footer.container {
   padding-top: 50px;
 }
 
-/* line 230, ../scss/_overrides.scss */
+/* line 297, ../scss/_overrides.scss */
 footer#tagline.large-7.small-centered.columns {
   margin-left: 20px;
   text-align: center;
 }
 
-/* line 235, ../scss/_overrides.scss */
+/* line 302, ../scss/_overrides.scss */
 div#footer.large-3.columns {
   margin-left: -50px;
   margin-right: 50px;
   margin-bottom: -50px;
 }
 
-/* line 241, ../scss/_overrides.scss */
+/* line 308, ../scss/_overrides.scss */
 div#copyright.large-3.columns {
   margin-top: 65px;
   margin-right: -50px;
 }
 
-/* line 246, ../scss/_overrides.scss */
+/* line 313, ../scss/_overrides.scss */
 div#footer.large-5.columns {
   margin: auto;
 }
-=======
-/* line 63, ../scss/_overrides.scss */
-ul.inline-list.right li a {
-  color: #262626;
-}
-/* line 66, ../scss/_overrides.scss */
-ul.inline-list.right li a:hover {
-  color: #fa6949;
-}
->>>>>>> 618e533707abc23516b36e6a1f7ab725b83caf4a
