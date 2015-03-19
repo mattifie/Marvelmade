@@ -59,13 +59,13 @@ ul.inline-list.left {
         a {
         color: $text-color;
 
-/* The hover selector isn't having an effect. */
-          a:hover {
-          color: $secondary-color;
+          &:hover {
+          color: $primary-color;
           }
-        }
-      }
-    }
+          }
+          }
+          }
+
 
 div.row.collapse.postfix-round {
   margin-top: 45px;

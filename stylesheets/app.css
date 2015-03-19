@@ -9213,11 +9213,10 @@ ul.inline-list.left li {
 /* line 59, ../scss/_overrides.scss */
 ul.inline-list.left li a {
   color: #262626;
-  /* The hover selector isn't having an effect. */
 }
-/* line 63, ../scss/_overrides.scss */
-ul.inline-list.left li a a:hover {
-  color: #fa6949;
+/* line 62, ../scss/_overrides.scss */
+ul.inline-list.left li a:hover {
+  color: #69d2e7;
 }
 
 /* line 70, ../scss/_overrides.scss */
