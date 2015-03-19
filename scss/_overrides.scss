@@ -314,7 +314,33 @@ div#footer.large-5.columns {
   margin: auto;
 }
 
+/* Create Campaign Header */
 
+#create {
+  background-color: $background-color;
+  height: 100px;
+}
+
+#create_heading {
+  padding-top: 25px;
+}
+
+#container_right {
+  float: right;
+  display: inline;
+
+  textarea {
+  height: 500px;
+  padding-right: 50px;
+  }
+}
+
+.container_left {
+  float: left;
+  display: block;
+  padding-left: 50px;
+  width: 100%;
+}
 
 
 

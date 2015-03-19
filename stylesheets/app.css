@@ -9516,3 +9516,34 @@ div#copyright.large-3.columns {
 div#footer.large-5.columns {
   margin: auto;
 }
+
+/* Create Campaign Header */
+/* line 319, ../scss/_overrides.scss */
+#create {
+  background-color: #e0e4cc;
+  height: 100px;
+}
+
+/* line 324, ../scss/_overrides.scss */
+#create_heading {
+  padding-top: 25px;
+}
+
+/* line 328, ../scss/_overrides.scss */
+#container_right {
+  float: right;
+  display: inline;
+}
+/* line 332, ../scss/_overrides.scss */
+#container_right textarea {
+  height: 500px;
+  padding-right: 50px;
+}
+
+/* line 338, ../scss/_overrides.scss */
+.container_left {
+  float: left;
+  display: block;
+  padding-left: 50px;
+  width: 100%;
+}
