@@ -10,6 +10,33 @@ $main-typeface: "Gibson", Arial Black, sans-serif;
 $heading-typeface: "Cooper Std", Chunkfive Roman, serif; 
 $secondary-typeface: "Alternate Gothic No. 2", Gibson, Copperplate Gothic Bold, Arial, sans-serif;
 
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+@mixin mobile {
+  @media (min-width: #{$mobile-width}) and (max-width: #{$tablet-width - 1px})
+  {
+  @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+body {
+  background-color: $primary-color;
+}
+
 .button {
   background-color: $primary-color;
   border-radius: 5px;
@@ -79,13 +106,30 @@ nav {
   border-bottom: 5px solid $primary-accent;
   }
 
-ul.inline-list.left {
+ul.inline-list#left {
       margin-top: 65px;
       padding-right: -20px;
+
+      @include tablet {
+      display: inline-block;
+      float: none;
+      margin-top: 10px;
+      }
+
+      @include mobile {
+      display: inline-block;
+      float: none;
+      margin-top: 5px;
+      }
 
       li {
       font-family: $main-typeface;
       font-size: 14px;
+
+      @include tablet {
+      font-size: 18px;
+      text-align: center;
+      }
 
         a {
         color: $text-color;
@@ -100,7 +144,15 @@ ul.inline-list.left {
 
 div.row.collapse.postfix-round {
   margin-top: 45px;
-  margin-left: -40px;
+
+  @include tablet {
+  margin-top: 10px;
+  }
+
+  @include mobile {
+  margin-top: 5px;
+  }
+
 
   input {
   font-family: $main-typeface;
@@ -112,12 +164,29 @@ div.row.collapse.postfix-round {
   }
 }
  
-ul.inline-list.right {
+ul.inline-list#right {
   margin-top: 65px;
+
+  @include tablet {
+  display: inline-block;
+  float: none;
+  margin-top: 10px;
+  }
+
+  @include mobile {
+  display: inline-block;
+  float: none;
+  margin-top: 5px;
+  }
 
   li {
   font-family: $main-typeface;
   font-size: 14px;
+
+  @include tablet{
+  font-size: 18px;
+  text-align: center;
+  }
   
     a {
     color: $text-color;
@@ -161,8 +230,8 @@ div#marketing.large-10.small-centered.columns {
       background-color:$background-color;
       border-top: 5px solid $primary-color;
       border-bottom: 5px solid $primary-color;
-      height: 700px;
       padding-top:50px;
+      padding-bottom: 50px;
 
   
   /* How do I change this font size? */
@@ -198,18 +267,20 @@ a#featurebutton.custom-button-class {
 
 /* Popular Campaigns */
 
+
+div#popular {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 div#popular.container {
   background-color: rgba(224, 228, 204, 0.5);
-  height: 640px;
-
-  .row {
-    padding-top: 50px;
 
   h4 {
     text-align: center;
     }
   }
-}  
+ 
 
 div#popular p, h5 {
   text-align: center;
@@ -244,7 +315,8 @@ div#campaign_3.campaign_photo {
 div#work {
   background-color: $background-color;
   border-top: solid 5px $secondary-color;
-  height: 500px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
   
   p {
@@ -299,20 +371,16 @@ div#start.large-4.columns h6{
   text-align: center;
 }
 
-div#how_we_work.row {
-  padding-top: 50px;
-}
-
 #button_build {
   text-align: center;
 }
 
 /* Footer */
 
+
 footer.container {
   background-color: $primary-color;
   border-top: 5px solid $primary-accent;
-  height: 350px; 
   padding-top: 50px;
   }
 
@@ -321,19 +389,27 @@ footer#tagline.large-7.small-centered.columns {
     text-align: center;
 }
 
-div#footer.large-3.columns {
-  margin-left: -50px;
-  margin-right: 50px;
-  margin-bottom: -50px;
-}
 
 div#copyright.large-3.columns {
   margin-top: 65px;
+
+  @include tablet {
+  text-align: center;
+  }
+
+
+  @include tablet {
+  margin-top: 10px;
+  text-align: center;
 }
 
-div#footer.large-5.columns {
-  margin: auto;
+  @include mobile {
+  margin-top: 10px;
+  text-align: center;
 }
+}
+
+
 
 /* Create Campaign Header */
 
@@ -348,7 +424,6 @@ div#footer.large-5.columns {
 
 .container {
   background-color: rgba(224, 228, 204, 0.5);
-  height: 1000px;
 }
 
 textarea {
