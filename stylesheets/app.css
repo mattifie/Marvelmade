@@ -9159,191 +9159,179 @@ th.hide-for-touch {
 }
 /* line 13, ../scss/_overrides.scss */
 .button {
-  border-radius: 10px;
+  background-color: #69d2e7;
+  border-radius: 5px;
+  font-family: "Gibson", Arial Black, sans-serif;
 }
 
-/* line 17, ../scss/_overrides.scss */
+/* line 20, ../scss/_overrides.scss */
+.button:hover, .button:focus {
+  background-color: #3FAEC3;
+}
+
+/* line 24, ../scss/_overrides.scss */
+#featurebutton {
+  border-radius: 5px;
+}
+
+/* line 28, ../scss/_overrides.scss */
 h1 {
   font-family: "Cooper Std", Chunkfive Roman, serif;
 }
 
-/* line 21, ../scss/_overrides.scss */
+/* line 32, ../scss/_overrides.scss */
 h2 {
   font-family: "Cooper Std", Chunkfive Roman, serif;
   font-size: 18px;
 }
 
-/* line 26, ../scss/_overrides.scss */
+/* line 37, ../scss/_overrides.scss */
 h3 {
   font-family: "Alternate Gothic No. 2", Gibson, Copperplate Gothic Bold, Arial, sans-serif;
 }
 
-/* line 30, ../scss/_overrides.scss */
+/* line 41, ../scss/_overrides.scss */
 h4 {
   font-family: "Alternate Gothic No. 2", Gibson, Copperplate Gothic Bold, Arial, sans-serif;
 }
 
-/* line 34, ../scss/_overrides.scss */
+/* line 45, ../scss/_overrides.scss */
 h5 {
   font-family: "Gibson", Arial Black, sans-serif;
 }
 
-/* line 38, ../scss/_overrides.scss */
+/* line 49, ../scss/_overrides.scss */
 h6 {
   font-family: "Cooper Std", Chunkfive Roman, serif;
 }
 
-/* line 42, ../scss/_overrides.scss */
+/* line 53, ../scss/_overrides.scss */
 a {
   font-family: "Gibson", Arial Black, sans-serif;
 }
 
-/* line 46, ../scss/_overrides.scss */
+/* line 57, ../scss/_overrides.scss */
 p {
   font-family: "Gibson", Arial Black, sans-serif;
 }
 
-/* line 50, ../scss/_overrides.scss */
+/* line 61, ../scss/_overrides.scss */
 input {
   font-family: "Gibson", Arial Black, sans-serif;
 }
 
-/* line 54, ../scss/_overrides.scss */
+/* line 65, ../scss/_overrides.scss */
 label {
   font-family: "Gibson", Arial Black, sans-serif;
   font-size: 22px;
 }
 
-/* line 59, ../scss/_overrides.scss */
-.button {
-  font-family: "Gibson", Arial Black, sans-serif;
-}
-
-/* line 63, ../scss/_overrides.scss */
+/* line 71, ../scss/_overrides.scss */
 select {
   font-family: "Gibson", Arial Black, sans-serif;
 }
 
 /* Navigation*/
-/* line 69, ../scss/_overrides.scss */
+/* line 77, ../scss/_overrides.scss */
 nav {
   background-color: #69d2e7;
   border-bottom: 5px solid #a7dbd8;
 }
 
-/* line 74, ../scss/_overrides.scss */
+/* line 82, ../scss/_overrides.scss */
 ul.inline-list.left {
   margin-top: 65px;
   padding-right: -20px;
 }
-/* line 78, ../scss/_overrides.scss */
+/* line 86, ../scss/_overrides.scss */
 ul.inline-list.left li {
   font-family: "Gibson", Arial Black, sans-serif;
   font-size: 14px;
 }
-/* line 82, ../scss/_overrides.scss */
+/* line 90, ../scss/_overrides.scss */
 ul.inline-list.left li a {
   color: #262626;
 }
-/* line 85, ../scss/_overrides.scss */
+/* line 93, ../scss/_overrides.scss */
 ul.inline-list.left li a:hover {
   color: #a7dbd8;
 }
 
-/* line 93, ../scss/_overrides.scss */
+/* line 101, ../scss/_overrides.scss */
 div.row.collapse.postfix-round {
   margin-top: 45px;
   margin-left: -40px;
 }
-/* line 97, ../scss/_overrides.scss */
+/* line 105, ../scss/_overrides.scss */
 div.row.collapse.postfix-round input {
   font-family: "Gibson", Arial Black, sans-serif;
 }
-/* line 101, ../scss/_overrides.scss */
+/* line 109, ../scss/_overrides.scss */
 div.row.collapse.postfix-round a.button.postfix {
   background-color: #a7dbd8;
   color: #262626;
 }
 
-/* line 107, ../scss/_overrides.scss */
+/* line 115, ../scss/_overrides.scss */
 ul.inline-list.right {
   margin-top: 65px;
 }
-/* line 110, ../scss/_overrides.scss */
+/* line 118, ../scss/_overrides.scss */
 ul.inline-list.right li {
   font-family: "Gibson", Arial Black, sans-serif;
   font-size: 14px;
 }
-/* line 114, ../scss/_overrides.scss */
+/* line 122, ../scss/_overrides.scss */
 ul.inline-list.right li a {
   color: #262626;
 }
 
 /* Hero Section */
-/* line 122, ../scss/_overrides.scss */
+/* line 130, ../scss/_overrides.scss */
 div#header {
   background-image: url("../images/HeroImage.jpg");
   background-size: cover;
   background-position: center;
   margin: 0;
   min-height: 700px;
-  opacity: .8;
 }
 
-/* line 131, ../scss/_overrides.scss */
+/* line 138, ../scss/_overrides.scss */
 .overlay {
   height: 700px;
   width: 100%;
   position: absolute;
-  background: -moz-linear-gradient(top, rgba(32, 124, 202, 0) 0%, rgba(73, 44, 7, 0.8) 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(32, 124, 202, 0)), color-stop(100%, rgba(73, 44, 7, 0.8)));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, rgba(32, 124, 202, 0) 0%, rgba(73, 44, 7, 0.8) 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, rgba(32, 124, 202, 0) 0%, rgba(73, 44, 7, 0.8) 100%);
-  /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, rgba(32, 124, 202, 0) 0%, rgba(73, 44, 7, 0.8) 100%);
-  /* IE10+ */
-  background: linear-gradient(to bottom, rgba(32, 124, 202, 0) 0%, rgba(73, 44, 7, 0.8) 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00207cca', endColorstr='#cc492c07',GradientType=0 );
-  /* IE6-9 */
+  background: rgba(105, 210, 231, 0.3);
 }
 
-/* line 144, ../scss/_overrides.scss */
+/* line 147, ../scss/_overrides.scss */
 div#marketing.large-10.small-centered.columns {
   text-align: center;
   padding-top: 350px;
 }
-/* line 148, ../scss/_overrides.scss */
-div#marketing.large-10.small-centered.columns h1 {
+/* line 151, ../scss/_overrides.scss */
+div#marketing.large-10.small-centered.columns h1, div#marketing.large-10.small-centered.columns h4 {
   color: #fff;
   text-shadow: 3px 3px #000;
 }
 
-/* line 155, ../scss/_overrides.scss */
-div#marketing.large-10.small-centered.columns h4 {
-  text-color: #ffffff;
-}
-
 /* Featured Campaign */
-/* line 162, ../scss/_overrides.scss */
+/* line 160, ../scss/_overrides.scss */
 div#featured {
   background-color: #e0e4cc;
   border-top: 5px solid #69d2e7;
   border-bottom: 5px solid #69d2e7;
-  height: 550px;
-  padding-top: 70px;
+  height: 700px;
+  padding-top: 50px;
   /* How do I change this font size? */
 }
-/* line 173, ../scss/_overrides.scss */
+/* line 169, ../scss/_overrides.scss */
 div#featured h2 {
   text-align: center;
   font-size: 36px;
 }
 
-/* line 180, ../scss/_overrides.scss */
+/* line 176, ../scss/_overrides.scss */
 div#feature_photo {
   background-image: url("../images/featuredphoto.jpg");
   background-position: center;
@@ -9353,19 +9341,12 @@ div#feature_photo {
   width: 400px;
 }
 
-/* line 189, ../scss/_overrides.scss */
+/* line 185, ../scss/_overrides.scss */
 div#featuretext.large-6.columns {
   margin-left: -25px;
 }
 
 /* line 193, ../scss/_overrides.scss */
-a#featurebutton.custom-button-class {
-  margin-left: 100px;
-  radius: 20px;
-}
-
-/* How to change radius- see documentation. If you make a custom button, can you adjust margins, etc?*/
-/* line 200, ../scss/_overrides.scss */
 .custom-button-class {
   border-style: solid;
   border-width: 0;
@@ -9401,26 +9382,26 @@ a#featurebutton.custom-button-class {
 }
 
 /* Popular Campaigns */
-/* line 208, ../scss/_overrides.scss */
+/* line 201, ../scss/_overrides.scss */
 div#popular.container {
   background-color: rgba(224, 228, 204, 0.5);
   height: 640px;
 }
-/* line 212, ../scss/_overrides.scss */
+/* line 205, ../scss/_overrides.scss */
 div#popular.container .row {
   padding-top: 50px;
 }
-/* line 215, ../scss/_overrides.scss */
+/* line 208, ../scss/_overrides.scss */
 div#popular.container .row h4 {
   text-align: center;
 }
 
-/* line 221, ../scss/_overrides.scss */
+/* line 214, ../scss/_overrides.scss */
 div#popular p, h5 {
   text-align: center;
 }
 
-/* line 225, ../scss/_overrides.scss */
+/* line 218, ../scss/_overrides.scss */
 .campaign_photo {
   background-position: center;
   border: solid 5px #69d2e7;
@@ -9429,39 +9410,39 @@ div#popular p, h5 {
   width: 300px;
 }
 
-/* line 234, ../scss/_overrides.scss */
+/* line 227, ../scss/_overrides.scss */
 div#campaign_1.campaign_photo {
   background-image: url("../images/CampaignOne.jpg");
   background-position: center;
 }
 
-/* line 239, ../scss/_overrides.scss */
+/* line 232, ../scss/_overrides.scss */
 div#campaign_2.campaign_photo {
   background-image: url("../images/CampaignTwo.jpg");
   background-position: center;
 }
 
-/* line 244, ../scss/_overrides.scss */
+/* line 237, ../scss/_overrides.scss */
 div#campaign_3.campaign_photo {
   background-image: url("../images/CampaignThree.jpg");
   background-position: center;
 }
 
 /* How We Work */
-/* line 251, ../scss/_overrides.scss */
+/* line 244, ../scss/_overrides.scss */
 div#work {
   background-color: #e0e4cc;
   border-top: solid 5px #fa6949;
-  height: 400px;
+  height: 500px;
 }
 
-/* line 257, ../scss/_overrides.scss */
+/* line 250, ../scss/_overrides.scss */
 p {
   text-align: center h5;
   text-align-text-align: center;
 }
 
-/* line 265, ../scss/_overrides.scss */
+/* line 258, ../scss/_overrides.scss */
 div#money img {
   display: block;
   margin-left: auto;
@@ -9470,57 +9451,62 @@ div#money img {
   vertical-align: middle;
 }
 
-/* line 273, ../scss/_overrides.scss */
+/* line 266, ../scss/_overrides.scss */
 div#time img {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 279, ../scss/_overrides.scss */
+/* line 272, ../scss/_overrides.scss */
 div#start img {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 285, ../scss/_overrides.scss */
+/* line 278, ../scss/_overrides.scss */
 div#money p {
   text-align: center;
 }
 
-/* line 289, ../scss/_overrides.scss */
+/* line 282, ../scss/_overrides.scss */
 div#time p {
   text-align: center;
 }
 
-/* line 293, ../scss/_overrides.scss */
+/* line 286, ../scss/_overrides.scss */
 div#start p {
   text-align: center;
 }
 
-/* line 297, ../scss/_overrides.scss */
+/* line 290, ../scss/_overrides.scss */
 div#money.large-4.columns h6 {
   text-align: center;
 }
 
-/* line 301, ../scss/_overrides.scss */
+/* line 294, ../scss/_overrides.scss */
 div#time.large-4.columns h6 {
   text-align: center;
 }
 
-/* line 305, ../scss/_overrides.scss */
+/* line 298, ../scss/_overrides.scss */
 div#start.large-4.columns h6 {
   text-align: center;
 }
 
-/* line 309, ../scss/_overrides.scss */
+/* line 302, ../scss/_overrides.scss */
 div#how_we_work.row {
   padding-top: 50px;
 }
 
+/* line 306, ../scss/_overrides.scss */
+#button_build {
+  text-align: center;
+}
+
 /* Footer */
-/* line 315, ../scss/_overrides.scss */
+/* line 312, ../scss/_overrides.scss */
 footer.container {
   background-color: #69d2e7;
   border-top: 5px solid #a7dbd8;
@@ -9528,84 +9514,84 @@ footer.container {
   padding-top: 50px;
 }
 
-/* line 322, ../scss/_overrides.scss */
+/* line 319, ../scss/_overrides.scss */
 footer#tagline.large-7.small-centered.columns {
   margin-left: 20px;
   text-align: center;
 }
 
-/* line 327, ../scss/_overrides.scss */
+/* line 324, ../scss/_overrides.scss */
 div#footer.large-3.columns {
   margin-left: -50px;
   margin-right: 50px;
   margin-bottom: -50px;
 }
 
-/* line 333, ../scss/_overrides.scss */
+/* line 330, ../scss/_overrides.scss */
 div#copyright.large-3.columns {
   margin-top: 65px;
-  margin-right: -50px;
 }
 
-/* line 338, ../scss/_overrides.scss */
+/* line 334, ../scss/_overrides.scss */
 div#footer.large-5.columns {
   margin: auto;
 }
 
 /* Create Campaign Header */
-/* line 344, ../scss/_overrides.scss */
+/* line 340, ../scss/_overrides.scss */
 #create {
   background-color: rgba(224, 228, 204, 0.5);
 }
 
-/* line 348, ../scss/_overrides.scss */
+/* line 344, ../scss/_overrides.scss */
 #create_heading {
   padding-top: 25px;
   padding-bottom: 25px;
 }
 
-/* line 353, ../scss/_overrides.scss */
+/* line 349, ../scss/_overrides.scss */
 .container {
   background-color: rgba(224, 228, 204, 0.5);
   height: 1000px;
 }
 
-/* line 358, ../scss/_overrides.scss */
+/* line 354, ../scss/_overrides.scss */
 textarea {
   border: 5px solid #69d2e7;
   height: 900px;
 }
 
-/* line 364, ../scss/_overrides.scss */
+/* line 360, ../scss/_overrides.scss */
 input#description {
   border: 5px solid #69d2e7;
   height: 200px;
 }
 
-/* line 370, ../scss/_overrides.scss */
+/* line 366, ../scss/_overrides.scss */
 input#media {
   border: 5px solid #69d2e7;
   height: 200px;
 }
 
-/* line 375, ../scss/_overrides.scss */
+/* line 371, ../scss/_overrides.scss */
 span.numbers {
   font-family: "Cooper Std", Chunkfive Roman, serif;
   font-size: 30px;
   margin-right: 10px;
 }
 
-/* line 381, ../scss/_overrides.scss */
+/*------------ Campaign Page ----------*/
+/* line 379, ../scss/_overrides.scss */
 #campaign_name {
   padding-top: 20px;
 }
 
-/* line 385, ../scss/_overrides.scss */
+/* line 383, ../scss/_overrides.scss */
 #summary {
-  background-color: rgba(167, 219, 216, 0.5);
+  background-color: rgba(224, 228, 204, 0.5);
 }
 
-/* line 390, ../scss/_overrides.scss */
+/* line 388, ../scss/_overrides.scss */
 div#Campaign_View {
   background-image: url("../images/CampaignView.jpg");
   background-position: center;
@@ -9614,41 +9600,45 @@ div#Campaign_View {
   width: 450px;
 }
 
-/* line 398, ../scss/_overrides.scss */
+/* line 396, ../scss/_overrides.scss */
 .tab-title.active a {
   background-color: #e0e4cc;
   font-family: "Gibson", Arial Black, sans-serif;
-  box-shadow: 1px 1px 5px 0px;
-  -webkit-box-shadow: 1px 1px 5px 0px;
 }
 
-/* line 405, ../scss/_overrides.scss */
+/* line 401, ../scss/_overrides.scss */
 .tab-title {
   font-family: "Gibson", Arial Black, sans-serif;
 }
 
-/* line 409, ../scss/_overrides.scss */
+/* line 405, ../scss/_overrides.scss */
 div#tabs {
-  background-color: rgba(167, 219, 216, 0.5);
-  margin-left: 50px;
+  background-color: rgba(224, 228, 204, 0.5);
+  padding-left: 50px;
 }
-/* line 413, ../scss/_overrides.scss */
+/* line 410, ../scss/_overrides.scss */
 div#tabs li {
-  background-color: rgba(167, 219, 216, 0.5);
+  background-color: rgba(224, 228, 204, 0.5);
 }
 
-/* line 419, ../scss/_overrides.scss */
-section#panel2-1.content.active {
-  box-shadow: 1px 1px 5px 0px;
-  -webkit-box-shadow: 1px 1px 5px 0px;
-  margin-left: 50px;
-  width: 1050px;
+/* line 416, ../scss/_overrides.scss */
+.tabs-content {
+  border-top: 5px solid #69d2e7;
+  padding-top: 10px;
 }
 
-/* line 427, ../scss/_overrides.scss */
-section#panel2-2.content.active {
-  box-shadow: 1px 1px 5px 0px;
-  -webkit-box-shadow: 1px 1px 5px 0px;
-  margin-left: 50px;
-  width: 1050px;
+/* -------Explore Page ------- */
+/* line 424, ../scss/_overrides.scss */
+#sidebar {
+  padding-top: 20px;
+}
+
+/* line 429, ../scss/_overrides.scss */
+#content_main {
+  padding: 20px 0px 20px 30px;
+}
+
+/* line 433, ../scss/_overrides.scss */
+#explore {
+  margin-left: 30px;
 }

@@ -11,7 +11,18 @@ $heading-typeface: "Cooper Std", Chunkfive Roman, serif;
 $secondary-typeface: "Alternate Gothic No. 2", Gibson, Copperplate Gothic Bold, Arial, sans-serif;
 
 .button {
-  border-radius: 10px;
+  background-color: $primary-color;
+  border-radius: 5px;
+  font-family: $main-typeface;
+}
+
+
+.button:hover, .button:focus {
+  background-color: #3FAEC3;
+}
+
+#featurebutton {
+  border-radius: 5px;
 }
 
 h1 {
@@ -29,7 +40,7 @@ h3 {
 
 h4 {
   font-family:$secondary-typeface;
-}
+  }
 
 h5 {
   font-family:$main-typeface;
@@ -56,9 +67,6 @@ label {
   font-size: 22px;
 }
 
-.button {
-  font-family: $main-typeface;
-}
 
 select {
   font-family: $main-typeface;
@@ -125,35 +133,25 @@ div#header {
   background-position: center;
   margin: 0;
   min-height: 700px; 
-  opacity: .8;
 }
 
 .overlay {
   height: 700px;
   width: 100%;
   position: absolute;
-  background: -moz-linear-gradient(top, rgba(32,124,202,0) 0%, rgba(73,44,7,0.8) 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(32,124,202,0)), color-stop(100%,rgba(73,44,7,0.8))); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, rgba(32,124,202,0) 0%,rgba(73,44,7,0.8) 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, rgba(32,124,202,0) 0%,rgba(73,44,7,0.8) 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, rgba(32,124,202,0) 0%,rgba(73,44,7,0.8) 100%); /* IE10+ */
-  background: linear-gradient(to bottom, rgba(32,124,202,0) 0%,rgba(73,44,7,0.8) 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00207cca', endColorstr='#cc492c07',GradientType=0 ); /* IE6-9 */
+  background: rgba(105, 210, 231, .3);
+
   }
+
 
 div#marketing.large-10.small-centered.columns {
   text-align: center; 
   padding-top: 350px;
 
-  h1 {
+  h1, h4 {
     color: #fff;
     text-shadow: 3px 3px #000;
-
  }
-}
-
-div#marketing.large-10.small-centered.columns h4 {
-  text-color: #ffffff;
 }
 
 
@@ -163,10 +161,8 @@ div#marketing.large-10.small-centered.columns h4 {
       background-color:$background-color;
       border-top: 5px solid $primary-color;
       border-bottom: 5px solid $primary-color;
-      height: 550px;
-      padding-top:70px;
-
-
+      height: 700px;
+      padding-top:50px;
 
   
   /* How do I change this font size? */
@@ -191,12 +187,9 @@ div#featuretext.large-6.columns {
 }
 
 a#featurebutton.custom-button-class {
-  margin-left: 100px;
-  radius: 20px;
   $button-font-family: $secondary-typeface;
 }
 
-/* How to change radius- see documentation. If you make a custom button, can you adjust margins, etc?*/
 .custom-button-class {
   @include button(
     $bg:$secondary-color
@@ -251,7 +244,7 @@ div#campaign_3.campaign_photo {
 div#work {
   background-color: $background-color;
   border-top: solid 5px $secondary-color;
-  height: 400px;
+  height: 500px;
 }
   
   p {
@@ -310,6 +303,10 @@ div#how_we_work.row {
   padding-top: 50px;
 }
 
+#button_build {
+  text-align: center;
+}
+
 /* Footer */
 
 footer.container {
@@ -332,7 +329,6 @@ div#footer.large-3.columns {
 
 div#copyright.large-3.columns {
   margin-top: 65px;
-  margin-right: -50px;
 }
 
 div#footer.large-5.columns {
@@ -378,12 +374,14 @@ span.numbers {
   margin-right: 10px;
 }
 
+
+/*------------ Campaign Page ----------*/
 #campaign_name {
   padding-top: 20px;
 }
 
 #summary {
-  background-color: rgba(167, 219, 216, 0.5)
+  background-color: rgba(224, 228, 204, 0.5)
 }
 
 
@@ -398,8 +396,6 @@ div#Campaign_View {
 .tab-title.active a {
   background-color:$background-color;
   font-family: $main-typeface;
-   box-shadow: 1px 1px 5px 0px;
-  -webkit-box-shadow: 1px 1px 5px 0px;
 }
 
 .tab-title {
@@ -407,28 +403,44 @@ div#Campaign_View {
 }
 
 div#tabs {
-  background-color: rgba(167, 219, 216, 0.5);
-  margin-left: 50px;
+  background-color: rgba(224, 228, 204, 0.5);
+  padding-left: 50px;
+
 
   li {
-  background-color: rgba(167, 219, 216, 0.5);
+  background-color: rgba(224, 228, 204, 0.5);
   }
 
 }
 
-section#panel2-1.content.active {
-  box-shadow: 1px 1px 5px 0px;
-  -webkit-box-shadow: 1px 1px 5px 0px;
-  margin-left: 50px;
-  width: 1050px;
-  
+.tabs-content {
+  border-top: 5px solid $primary-color;
+  padding-top: 10px;
 }
 
-section#panel2-2.content.active {
-  box-shadow: 1px 1px 5px 0px;
-  -webkit-box-shadow: 1px 1px 5px 0px;
-  margin-left: 50px;
-  width: 1050px;
-  
+
+/* -------Explore Page ------- */
+
+#sidebar {
+  padding-top: 20px;
+
 }
+
+#content_main {
+  padding: 20px 0px 20px 30px;
+}
+
+#explore {
+  margin-left: 30px;
+}
+
+
+
+
+
+
+
+
+
+
 

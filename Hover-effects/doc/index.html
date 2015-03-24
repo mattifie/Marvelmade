@@ -1,0 +1,181 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Hover Pack Documentation</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;Hover Pack&rdquo; Documentation by Horoshilow Boris v1.3</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;Hover Pack&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 08/01/2014<br>
+					By: Horishilow Boris<br>
+					Email: <a href="mailto:borisolhor@gmail.com">borisolhor@gmail.com</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing my item. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://codecanyon.net/user/borisolhor">here</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#including">Including plugin files</a></li>
+			<li><a href="#start">Quick start guide</a></li>
+			<li><a href="#code">HTML Code structure description</a></li>
+			<li><a href="#hover">Hover animation classes</a></li>
+			<li><a href="#opacity">Hover opacity classes</a></li>
+			<li><a href="#text">Text animation</a></li>
+		</ol>
+		
+		<hr>
+		
+		<h3 id="including"><strong>A) Including plugin files</strong> - <a href="#toc">top</a></h3>
+		<p>To use this plugin you must include two files from this plugin - hover_pack.js and hover_pack.css. Also you need to have jQuery plugin included in your code (You must include it before hover_pack.js file).</p>
+
+    <img src="assets/images/img1.png" />
+    
+    <hr>
+		
+		<h3 id="start"><strong>B) Quick start guide</strong> - <a href="#toc">top</a></h3>
+		<p>To start use this plugin just include script files (javascript and CSS from  hover pack and also jQuery plugin) and copy example code, which you can find in index.html file. After that you can change animation style for image or text, change text itself and so on.</p>
+
+    <img src="assets/images/img1.png" />
+
+		<hr>
+
+		<h3 id="code"><strong>C) HTML code structure description</strong> - <a href="#toc">top</a></h3>
+
+		<p>In example code you can find this code structure:</p>
+		
+		<img src="assets/images/img2.png" />
+		
+		<p>So, there is link tag, image tag and span tag (optional), that can include some text (text must be wrapped in header or paragraph tags).</p> 
+		
+		<p>The anchor tag must have two CSS classes - <code>b-animate-go</code> and class with animation name (list of this classes you can find in <a href="#hover">hover animation section</a>).</p> 
+		
+		<p>If you want to use some text that will go over hover tile, you must to add span tag with css class b-wrapper. After that you can add text in header and paragraph tags into this tag. Also if you want to use animation and delay effects for your text, you must to add CSS classes to header and paragraph tags. List of this classes you can find in <a href="#text">text animation section</a> below.</p>
+
+		<hr>
+		
+		<h3 id="hover"><strong>D) Hover animation classes</strong> - <a href="#toc">top</a></h3>
+		
+		<p>To add hover effects, you can use css classes, listed below:</p>
+		
+		<p><code>b-link-fade</code></p>
+		
+		<p><code>b-link-stroke</code></p>
+		
+		<p><code>b-link-twist</code></p>
+		
+		<p><code>b-link-flip</code></p>
+		
+		<p><code>b-link-flow</code></p>
+		
+		<p><code>b-link-box</code></p>
+		
+		<p><code>b-link-stripe</code></p>
+		
+		<p><code>b-link-apart-horisontal</code></p>
+		
+		<p><code>b-link-apart-vertical</code></p>
+		
+		<p><code>b-link-diagonal</code></p>
+		
+		<hr>
+		
+		<h3 id="opacity"><strong>D) Hover opacity classes</strong> - <a href="#toc">top</a></h3>
+		
+		<p>Also you can add opacity to hover layout by adding listed below classes (this will work with all effects, except twist and flip):</p>
+		
+		<p><code>b-opacity-10</code> - equals css property <code>opacity: 0.1</code></p>
+		
+		<p><code>b-opacity-20</code> - equals css property <code>opacity: 0.2</code></p>
+		
+		<p><code>b-opacity-30</code> - equals css property <code>opacity: 0.3</code></p>
+		
+		<p><code>b-opacity-40</code> - equals css property <code>opacity: 0.4</code></p>
+		
+		<p><code>b-opacity-50</code> - equals css property <code>opacity: 0.5</code></p>
+		
+		<p><code>b-opacity-60</code> - equals css property <code>opacity: 0.6</code></p>
+		
+		<p><code>b-opacity-70</code> - equals css property <code>opacity: 0.7</code></p>
+		
+		<p><code>b-opacity-80</code> - equals css property <code>opacity: 0.8</code></p>
+		
+		<p><code>b-opacity-90</code> - equals css property <code>opacity: 0.9</code></p>
+		
+		<hr>
+		
+		<h3 id="text"><strong>E) Text animation classes</strong> - <a href="#toc">top</a></h3>
+		
+		<p>For text animation you may use css classes, listed below:</p>
+		
+		<p><code>b-from-left</code></p>
+		
+		<p><code>b-from-right</code></p>
+		
+		<p><code>b-from-top</code></p>
+		
+		<p><code>b-from-bottom</code></p>
+		
+		<p><code>b-scale</code></p>
+		
+		<p><code>b-opacity</code></p>
+		
+		<p><code>b-cw-90</code> - clockwise rotation for 90 degrees</p>
+		
+		<p><code>b-cw-180</code> - clockwise rotation for 180 degrees</p>
+		
+		<p><code>b-ccw-90</code> - counterclockwise rotation for 90 degrees</p>
+		
+		<p><code>b-ccw-180</code> - counterclockwise rotation for 180 degrees</p>
+		
+		<p>Also you can add delay for each element by adding css classes, listed below:</p>
+		
+		<p><code>b-delay03</code> - delay for 0,3 seconds</p>
+		
+		<p><code>b-delay06</code> - delay for 0,6 seconds</p>
+		
+		<p><code>b-delay09</code> - delay for 0,9 seconds</p>
+		
+		<p><code>b-delay12</code> - delay for 1,2 seconds</p>
+		
+		<p><code>b-delay15</code> - delay for 1,5 seconds</p>
+		
+		<img src="assets/images/img2.png" />
+		
+		<p>In this example text will be slide from left with delay 0,3 seconds.</p>
+
+    <p>Also you can use several effects for one element:</p>
+    
+    <img src="assets/images/img3.png" />
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>

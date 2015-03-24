@@ -6,6 +6,9 @@
     <title>Foundation</title>
     <link rel="stylesheet" href="stylesheets/app.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" href="Hover-effects/css/reset.css">
+    <link rel="stylesheet" href="Hover-effects/css/hover_pack.css">
   </head>
   <body>
 
@@ -84,105 +87,219 @@
 
 
 <!--Main Content: Slider Image-->
-       <div class="row">    
-        <div class="large-9 push-3 columns">
-          <h3>POPULAR CAMPAIGNS</h3>
+      <div class="container">
+       <div class="row" id="explore">    
+        <div class="large-9 push-3 columns" id="content_main">
+          <h1>Popular Campaigns</h1>
           <div class="row">
-           <div class="large-12 columns">
-            <div id="slider">
-              <img src="http://placehold.it/1000x400&text=[ img 1 ]"/>
+           <div class="single-item">
+            <div>
+              <img src="images/Skater.jpg">
             </div>
-            <hr/>
+            <div>
+              <img src="images/Letterpress.jpg">
+            </div>
+            <div>
+              <img src="images/Photography.jpg">
+            </div>
            </div>
           </div>
+          <br>
+          <br>
 <!--Main Content: Slider Image End-->
 
 <!--Main Content: Campaign Examples -->          
-        <div class="row">
+      <div class="large-12 columns">
         <h3>RECENT CAMPAIGNS</h3>
-        <div class="large-4 columns">
-          <img src="http://placehold.it/400x300&text=[img]"/>
-          <h4>This is a content section.</h4>
-          <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
-        </div>
-        
-        <div class="large-4 columns">
-          <img src="http://placehold.it/400x300&text=[img]"/>
-          <h4>This is a content section.</h4>
-          <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
-        </div>
-        
-        <div class="large-4 columns">
-          <img src="http://placehold.it/400x300&text=[img]"/>
-          <h4>This is a content section.</h4>
-          <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
-        </div>
-        <a href="#" class="button">See More</a>
+        <ul class="medium-block-grid-3">
+          <li>  
+            <a href="#" class="b-link-fade b-animate-go">
+            <img src="images/Recent_1.jpg"/>
+            <div class="b-wrapper">
+            <h2 class="b-from-left b-animate b-delay03">Campaign 1</h2>
+            <p class="b-from-right b-animate b-delay03">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="b-link-fade b-animate-go">
+            <img src="images/Recent_2.jpg"/>
+            <div class="b-wrapper">
+            <h2 class="b-from-left b-animate b-delay03">Campaign 2</h2>
+            <p class="b-from-right b-animate b-delay03">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+           </a>
+          </li>
+          <li>
+            <a href="#" class="b-link-fade b-animate-go">
+            <img src="images/Recent_3.jpg"/>
+            <div class="b-wrapper">
+            <h2 class="b-from-left b-animate b-delay03">Campaign 3</h2>
+            <p class="b-from-right b-animate b-delay03">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="b-link-fade b-animate-go">
+            <img src="images/Recent_4.jpg"/>
+            <div class="b-wrapper">
+            <h2 class="b-from-left b-animate b-delay03">Campaign 4</h2>
+            <p class="b-from-right b-animate b-delay03">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+           </a>
+          </li>
+          <li>
+            <a href="#" class="b-link-fade b-animate-go">
+            <img src="images/Recent_5.jpg"/>
+            <div class="b-wrapper">
+            <h2 class="b-from-left b-animate b-delay03">Campaign 5</h2>
+            <p class="b-from-right b-animate b-delay03">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            </a>
+         </li>
+          <li>
+            <a href="#" class="b-link-fade b-animate-go">
+            <img src="images/Recent_6.jpg"/>
+            <div class="b-wrapper">
+            <h2 class="b-from-left b-animate b-delay03">Campaign 6</h2>
+            <p class="b-from-right b-animate b-delay03">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+           </a>
+          </li>
+          </ul>  
       </div>
-      <hr/>
+      <br>
+      <div class="text-center">
+        <a href="#" class="button text-center" id="featurebutton">SEE MORE</a>
+      </div>
+      <br>
+      <br>
  <!--Main Content: Campaign Examples End -->               
      
                
 <!--Sidebar-->  
       </div>       
-        <div class="large-3 pull-9 columns">
+        <div class="large-3 pull-9 columns" id="sidebar">
           <h5>FILTERS</h5> 
-            <h5>City</h5>
+            <h5 class="text-left">City</h5>
            <form>
-            <input type="text" placeholder="Search" required>
-            <h5>State</h5>
-            <input type="text" placeholder="Search" required>
-            <input type="button" value="Search">
+            <input type="text" placeholder="Reno" required>
+            <h5 class="text-left">State</h5>
+            <input type="text" placeholder="Nevada" required>
+            <a href="#" class="button expand">Search</a>
            </form>
           <section class="search">
                 <form class="custom">
-                      <label>
-                        Additional Filters:
-                      </label>
+                      <h5>
+                        ADDITIONAL FILTERS
+                      </h5>
+                      <br>
                         <select>
                           <option value="Percent Funded">Percent Funded</option>
                           <option value="Time Donors Needed">Time Donors Needed</option>
                           <option value="Funding Needed">Funding Needed</option>
                         </select>
+                        <br>
+                        <br>
                       <a href="#" class="button expand">Search</a>
                 </form>
         </div>
-      </div>
+    </div>
+  </div>
 <!--Sidebar End-->
 
 
 <!-- Footer -->
-    <footer class="row">
-        <div class="large-12 columns">
-            <div class=large-12 columns>
-          <img src="">
-          <h3>MARVELMADE TAGLINE OR SOMETHING</h3>
-        </div>
-          <div class="large-4 columns">
-              <ul class="inline-list right">
+      <footer class="container">
+              <div class="large-12 small-12 columns text-center" id="footerlogo">
+                    <img src="images/MarvelmadeLogo_Small.png">
+              </div>
+              <div class="large-12 small-12 columns text-center" id="tagline">
+                <h4>Innovative programs, superhero kids, and a push from you.</h4>
+              </div>
+        <div class="row">
+          <div class="large-3 small-12 columns" id="footer">
+              <ul class="inline-list right" id="footer">
                 <li><a href="#" data-reveal-id="SignInModal">Sign In</a></li>
                 <li><a href="#" data-reveal-id="SignInModal">Sign Up</a></li>
                 <li><a href="#">Explore</a></li>
               </ul>
           </div>
-          <div class="large-3 columns">
-           <form>
-            <input type="text" placeholder="Search" required>
-            <input type="button" value="Search">
-           </form>
+          <div class="large-6 columns" id="footer">
+              <div class="row collapse postfix-round">
+                <div class="small-9 columns">
+                  <input type="text" placeholder="Search Away">
+                </div>
+                <div class="small-3 columns">
+                  <a href="#" class="button postfix">GO</a>
+                </div>
+              </div>
           </div>
-          <div class="row">
-            <div class="large-4 columns">
+            <div class="large-3 columns" id="copyright">
               <p>© 2015 Marvelmade</p>
             </div>
           </div>
+    </footer>
+
+<!-- "Create" Sign In Modal-->
+  <div id="modal_container">
+   <div id="CreateSignInModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+    <h2>Sign in or sign up to continue, please!</h2>
+          <div class="row">
+            <div class="large-6 columns">
+              <h4>Sign In</h4>
+              <a href="#" class="button">Login with Facebook</a>
+              <form>
+                <label>Email</label>
+                <input type="text" placeholder="Your email address goes here" required>
+              </form>
+                <label>Password</label>
+                <input type="text" placeholder="Your password goes here" required>
+              </form>
+              <a href="#" class="button">Sign In</a>
+            </div>
+            <div class="large-6 columns">
+              <h4>Sign Up</h4>
+              <a href="#" class="button">Sign Up with Facebook</a>
+              <form>
+                <label>Email</label>
+                <input type="text" placeholder="Your email address goes here" required>
+              </form>
+                <label>Password</label>
+                <input type="text" placeholder="Your password goes here" required>
+              </form>
+              </form>
+                <label>Confirm Password</label>
+                <input type="text" placeholder="One more time!" required>
+              </form>
+              <a href="#" class="button">Sign Up</a>
+            </div>
+          </div>
+          <a class="close-reveal-modal" aria-label="Close">&#215;</a>
         </div>
-      </footer>
+      </container>
+  <!-- "Create" Sign In Modal End -->
 
 
 <!--Don't touch this--> 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
     <script src="js/app.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="Hover-effects/js/hover_pack.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $('.single-item').slick({
+        arrows: false,
+        autoplay: true,
+        dots: false,
+        infinite: true,
+        swipe: true
+      });
+    });
+  </script>
   </body>
 </html>
