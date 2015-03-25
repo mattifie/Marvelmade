@@ -106,7 +106,7 @@ nav {
   border-bottom: 5px solid $primary-accent;
   }
 
-ul.inline-list#left {
+ul.inline-list {
       margin-top: 65px;
       padding-right: -20px;
 
@@ -117,9 +117,8 @@ ul.inline-list#left {
       }
 
       @include mobile {
-      display: inline-block;
-      float: none;
       margin-top: 5px;
+      text-align: center;
       }
 
       li {
@@ -127,8 +126,10 @@ ul.inline-list#left {
       font-size: 14px;
 
       @include tablet {
+      display: inline-block;
       font-size: 18px;
       text-align: center;
+      float: none;
       }
 
         a {
@@ -137,9 +138,20 @@ ul.inline-list#left {
           &:hover {
           color: $primary-accent;
           }
-          }
-          }
-          }
+        }
+      }
+    }
+
+.inline-list li {
+
+  @include mobile {
+      display: inline-block;
+      font-size: 18px;
+      text-align: center;
+      float: none;
+  }
+
+}
 
 
 div.row.collapse.postfix-round {
@@ -399,14 +411,14 @@ div#copyright.large-3.columns {
 
 
   @include tablet {
-  margin-top: 10px;
-  text-align: center;
-}
+    margin-top: 10px;
+    text-align: center;
+  }
 
   @include mobile {
-  margin-top: 10px;
-  text-align: center;
-}
+    margin-top: 10px;
+    text-align: center;
+  }
 }
 
 
