@@ -5,23 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Foundation</title>
     <link rel="stylesheet" href="stylesheets/app.css" />
+    <link rel="stylesheet" href="dropzone-4.0.1/dist/dropzone.css"
     <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
   <body>
 
   <!--Top Nav Bar -->
-   <nav>
+    <nav>
       <div class="row" id="nav">
-        <div class="large-3 columns">
+        <div class="large-3 small-12 columns small-text-center ">
           <h1><img src="images/MarvelmadeLogo_Small.png"/></h1>
         </div>
-        <div class="large-3 columns">
-          <ul class="inline-list left">
+        <div class="large-3 small-12 columns small-text-center">
+          <ul class="inline-list" id="left">
             <li><a href="#">EXPLORE</a></li>
             <li><a href="#" data-reveal-id="CreateSignInModal">CREATE</a></li>
           </ul>
         </div>
-        <div class="large-4 columns">
+        <div class="large-4 small-12 columns small-text-center">
               <div class="row collapse postfix-round">
                 <div class="small-9 columns">
                   <input type="text" placeholder="Search Away">
@@ -31,8 +32,8 @@
                 </div>
               </div>
         </div>
-        <div class="large-2 columns">
-          <ul class="inline-list right">
+        <div class="large-2 small-12 columns small-text-center">
+          <ul class="inline-list" id="right">
           <li><a href="#" data-reveal-id="SignInModal">Sign In</a>
           </li>
           <li><a href="#" data-reveal-id="SignInModal">Sign Up</a>
@@ -40,7 +41,7 @@
           </ul>
         </div>
       </div>
-    </nav> 
+      </nav> 
   <!-- Top Nav Bar end -->
         
 
@@ -49,9 +50,9 @@
           <div class="row">
             <div class="large-12 columns" id="create_heading">
               <div class="large-8 columns">
-              <h1 class="text-left">Create A Campaign</h1>
+              <h1 id="create-header">Create A Campaign</h1>
               </div>
-              <div class="large-4 columns text-right">
+              <div class="large-4 columns" id="create-button">
                 <a href="#" class="fancy radius button">Preview</a>
                 <a href="#" class="fancy radius button">Submit</a>
               </div>
@@ -84,17 +85,17 @@
           </div>
                <label><span class="numbers">3</span>Campaign Duration</label>
                       <ul class="button-group even-4">
-                        <li><a href="#" class="button">30 Days</a></li>
-                        <li><a href="#" class="button">60 Days</a></li>
-                        <li><a href="#" class="button">90 Days</a></li>
-                        <li><a href="#" class="button">120 Days</a></li>
+                        <li><a href="#" class="small button">30 Days</a></li>
+                        <li><a href="#" class="small button">60 Days</a></li>
+                        <li><a href="#" class="small button">90 Days</a></li>
+                        <li><a href="#" class="small button">120 Days</a></li>
                       </ul>
               <label><span class="numbers">4</span>Brief Description
-                <input type="text" id="description" placeholder="Try for one-sentence pitch" />
+                <input type="text" id="description" placeholder="Try for a one-sentence pitch" />
               </label>
               <label><span class="numbers">5</span>Media Upload
-                <input type="text" id="media" placeholder="Drop your files here." />
-              </label>
+                <form action="/file-upload"class="dropzone"id="my-awesome-dropzone">
+                </form>
           </div>
       <!-- left column stuff -->
           </div>
@@ -111,7 +112,7 @@
     
 
   <!-- Footer -->
-         <footer class="container">
+       <footer class="container">
               <div class="large-12 small-12 columns text-center" id="footerlogo">
                     <img src="images/MarvelmadeLogo_Small.png">
               </div>
@@ -119,14 +120,14 @@
                 <h4>Innovative programs, superhero kids, and a push from you.</h4>
               </div>
         <div class="row">
-          <div class="large-3 small-12 columns" id="footer">
-              <ul class="inline-list right" id="footer">
+          <div class="large-3 small-12 columns">
+              <ul class="inline-list">
                 <li><a href="#" data-reveal-id="SignInModal">Sign In</a></li>
                 <li><a href="#" data-reveal-id="SignInModal">Sign Up</a></li>
                 <li><a href="#">Explore</a></li>
               </ul>
           </div>
-          <div class="large-6 columns" id="footer">
+          <div class="large-6 columns">
               <div class="row collapse postfix-round">
                 <div class="small-9 columns">
                   <input type="text" placeholder="Search Away">
@@ -136,8 +137,8 @@
                 </div>
               </div>
           </div>
-            <div class="large-3 columns" id="copyright">
-              <p class="text-right">© 2015 Marvelmade</p>
+            <div class="large-3 small-12 columns">
+              <p id="p-foot">© 2015 Marvelmade</p>
             </div>
           </div>
     </footer>
@@ -183,5 +184,6 @@
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
     <script src="js/app.js"></script>
+    <script src="dropzone-4.0.1/dist/dropzone.js"></script>
   </body>
 </html>

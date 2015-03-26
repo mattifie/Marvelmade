@@ -10,18 +10,18 @@
   <body>
 
   <!--Top Nav Bar -->
-   <nav>
+      <nav>
       <div class="row" id="nav">
-        <div class="large-3 columns">
+        <div class="large-3 small-12 columns small-text-center ">
           <h1><img src="images/MarvelmadeLogo_Small.png"/></h1>
         </div>
-        <div class="large-3 columns">
-          <ul class="inline-list left">
+        <div class="large-3 small-12 columns small-text-center">
+          <ul class="inline-list" id="left">
             <li><a href="#">EXPLORE</a></li>
             <li><a href="#" data-reveal-id="CreateSignInModal">CREATE</a></li>
           </ul>
         </div>
-        <div class="large-4 columns">
+        <div class="large-4 small-12 columns small-text-center">
               <div class="row collapse postfix-round">
                 <div class="small-9 columns">
                   <input type="text" placeholder="Search Away">
@@ -31,8 +31,8 @@
                 </div>
               </div>
         </div>
-        <div class="large-2 columns">
-          <ul class="inline-list right">
+        <div class="large-2 small-12 columns small-text-center">
+          <ul class="inline-list" id="right">
           <li><a href="#" data-reveal-id="SignInModal">Sign In</a>
           </li>
           <li><a href="#" data-reveal-id="SignInModal">Sign Up</a>
@@ -49,7 +49,7 @@
           <div class="large-8 columns">
             <h1>The Recyclery</h>
           </div>
-          <div class="large-4 columns text-right">
+          <div class="large-4 columns" id="bookmark">
             <a href="#" class="button">Bookmark Campaign</a>
           </div>
         </div>
@@ -71,7 +71,7 @@
     </section>
           <div class="row">
               <div class="large-6 columns">
-                <img src="http://placehold.it/400x300&text=[img]"/>
+                <canvas id="TotalDonations" width="400" height="400"></canvas>
               </div>
 
               <div class="large-6 columns text-center">
@@ -207,14 +207,14 @@
                 <h4>Innovative programs, superhero kids, and a push from you.</h4>
               </div>
         <div class="row">
-          <div class="large-3 small-12 columns" id="footer">
-              <ul class="inline-list right" id="footer">
+          <div class="large-3 small-12 columns">
+              <ul class="inline-list">
                 <li><a href="#" data-reveal-id="SignInModal">Sign In</a></li>
                 <li><a href="#" data-reveal-id="SignInModal">Sign Up</a></li>
                 <li><a href="#">Explore</a></li>
               </ul>
           </div>
-          <div class="large-6 columns" id="footer">
+          <div class="large-6 columns">
               <div class="row collapse postfix-round">
                 <div class="small-9 columns">
                   <input type="text" placeholder="Search Away">
@@ -224,11 +224,12 @@
                 </div>
               </div>
           </div>
-            <div class="large-3 columns" id="copyright">
-              <p class="text-right">© 2015 Marvelmade</p>
+            <div class="large-3 small-12 columns">
+              <p id="p-foot">© 2015 Marvelmade</p>
             </div>
           </div>
     </footer>
+
 
 <!-- Donate Time Modal -->
   <div id="DonateTimeModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
@@ -310,7 +311,6 @@
               </div>
               <div class="large-3 columns">
                 <form>
-<!-- Is a date picker something I should add via javascript or jquery? I found this code on github, as recommended by a Foundation forum: https://github.com/eternicode/bootstrap-datepicker-->
                   <label>Expiration Date</label>
                   <input type="text" placeholder="03/17/17" required>
                 </form>
@@ -411,5 +411,6 @@
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/Chart.js"></script>
   </body>
 </html>
