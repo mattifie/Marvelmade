@@ -18,3 +18,6 @@ var options = {
 };
 var ToDate = $("#TotalDonations").get(0).getContext("2d");
 var myTotalDonations = new Chart(ToDate).Doughnut(TotalDonations, options);
+
+
+
