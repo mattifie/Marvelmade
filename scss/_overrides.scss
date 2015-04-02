@@ -7,8 +7,8 @@ $text-color: #262626;
 $include-html-button-classes: $include-html-classes;
 $block-grid-media-queries: true;
 
-$main-typeface: "Gibson", Arial Black, sans-serif; 
-$heading-typeface: "Cooper Std", Chunkfive Roman, serif; 
+$main-typeface: "canada-type-gibson", "Gibson", Arial Black, sans-serif; 
+$heading-typeface: "cooper-black-std", "Cooper Std", Chunkfive Roman, serif; 
 $secondary-typeface: "Alternate Gothic No. 2", Gibson, Copperplate Gothic Bold, Arial, sans-serif;
 
 $mobile-width: 320px;
@@ -49,6 +49,10 @@ body {
   background-color: #3FAEC3;
 }
 
+.button.small {
+  background-color: $secondary-color;
+}
+
 #featurebutton {
   border-radius: 5px;
 }
@@ -65,6 +69,8 @@ h2 {
 
 h3 {
   font-family:$secondary-typeface;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
 h4 {
@@ -105,8 +111,21 @@ select {
 /* Navigation*/
 
 #logo {
+
+  @include desktop {
   padding-top: 15px;
   margin-left: -20px;
+  }
+
+  @include tablet {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  }
+
+  @include mobile {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  }
 }
 
 nav {
@@ -137,7 +156,7 @@ div.row.collapse.postfix-round input {
 #sign {
 
   @include desktop {
-  margin-right: -40px;
+  margin-right: -60px;
   }
 }
 
@@ -323,7 +342,6 @@ div#marketing.large-10.small-centered.columns {
       padding-bottom: 50px;
 
   
-  /* How do I change this font size? */
     h2 {
     text-align: center;
     font-size: 36px;
@@ -332,7 +350,7 @@ div#marketing.large-10.small-centered.columns {
   
 
   div#feature_photo {
-    background-image: url('../images/featuredphoto.jpg');
+    background-image: url('../images/CampaignTwo.jpg');
     background-position: center; 
     background-size: cover;
     height: 300px;
@@ -341,6 +359,13 @@ div#marketing.large-10.small-centered.columns {
 
 div#featuretext.large-6.columns {
   margin-left: -25px;
+}
+
+#featuretext {
+
+  @include desktop {
+  margin-top: -10px;
+  }
 }
 
 a#featurebutton.custom-button-class {
@@ -389,7 +414,7 @@ div#campaign_1.campaign_photo {
 }
 
 div#campaign_2.campaign_photo {
-  background-image: url('../images/CampaignTwo.jpg');
+  background-image: url('../images/featuredphoto.jpg');
   background-position: center; 
 }
 
@@ -508,7 +533,7 @@ div#copyright.large-3.columns {
   }
 }
 
-/* Create Campaign Header */
+/*---------- Create Campaign Page-----------*/
 
 #create {
   background-color: rgba(224, 228, 204, 0.5);
@@ -517,14 +542,27 @@ div#copyright.large-3.columns {
 #create_heading {
   padding-top: 25px;
   padding-bottom: 25px;
+
+  @include tablet {
+  text-align: center;
+  }
+
+  @include mobile {
+  text-align: center;
+  }
 }
 
 .container {
   background-color: rgba(224, 228, 204, 0.5);
 }
 
+#description {
+  height: 200px;
+  margin-bottom: 15px;
+}
+
 textarea {
-  height: 855px;
+  height: 843px;
   margin-bottom: 50px;
   
 }
@@ -535,7 +573,6 @@ input#description {
 }
 
 input#media {
-  border: 5px solid $primary-color;
   height: 200px;
   background-color: #ffffff;
 }
@@ -544,6 +581,30 @@ span.numbers {
   font-family: $heading-typeface;
   font-size: 30px;
   margin-right: 10px;
+}
+
+#create-header {
+  
+  @include desktop {
+  text-align: left;
+  margin-left: -18px;
+  }
+}
+
+#create-button {
+  
+  @include desktop {
+  text-align: right;
+  margin-right: -18px;
+  }
+
+  @include tablet {
+  text-align: center;
+  }
+
+  @include mobile {
+  text-align: center;
+  }
 }
 
 
@@ -625,7 +686,15 @@ hr {
   float: left;
   }
 
+  @include tablet {
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%
+  }
+
   @include mobile {
+  padding-left: 10px;
+  padding-right: 10px;
   width: 100%
   }
 }
@@ -635,6 +704,11 @@ hr {
   @include desktop {
   width: 70%;
   float: right;
+  }
+
+  @include tablet {
+  padding-left: 20px;
+  padding-right: 20px;
   }
 
   @include mobile {
@@ -651,27 +725,11 @@ ul.medium-block-grid-3 {
 
 #explore {
   padding-top: 20px;
-}
 
-#campaign_hidden {
-  display: none;
-}
+  h1 {
 
-
-
-/* ---------Create Campaign Page ------- */
-
-#create-header {
-  
   @include desktop {
-  text-align: left;
-  }
-}
-
-#create-button {
-  
-  @include desktop {
-  text-align: right;
+  margin-left: -15px;
   }
 
   @include tablet {
@@ -682,6 +740,27 @@ ul.medium-block-grid-3 {
   text-align: center;
   }
 }
+}
+
+#recent h3 {
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding-bottom: 10px;
+}
+
+#recent h5 {
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+#campaign_hidden {
+  display: none;
+}
+
+
+
+
 
 /* ---------Edit Campaign Page -------- */
 
