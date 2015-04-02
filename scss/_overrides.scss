@@ -1,0 +1,784 @@
+$primary-color: #69d2e7;
+$secondary-color: #fa6949;
+$primary-accent: #a7dbd8;
+$secondary-accent: #faa16d;
+$background-color: #e0e4cc;
+$text-color: #262626;
+$include-html-button-classes: $include-html-classes;
+$block-grid-media-queries: true;
+
+$main-typeface: "canada-type-gibson", "Gibson", Arial Black, sans-serif; 
+$heading-typeface: "cooper-black-std", "Cooper Std", Chunkfive Roman, serif; 
+$secondary-typeface: "Alternate Gothic No. 2", Gibson, Copperplate Gothic Bold, Arial, sans-serif;
+
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+@mixin mobile {
+  @media (min-width: #{$mobile-width}) and (max-width: #{$tablet-width - 1px})
+  {
+  @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+body {
+  background-color: #e0e4cc;
+}
+
+.button {
+  background-color: $primary-color;
+  border-radius: 5px;
+  font-family: $main-typeface;
+}
+
+
+.button:hover, .button:focus {
+  background-color: #3FAEC3;
+}
+
+.button.small {
+  background-color: $secondary-color;
+}
+
+#featurebutton {
+  border-radius: 5px;
+}
+
+h1 {
+  font-family:$heading-typeface;
+  color: $text-color;
+}
+
+h2 {
+  font-family:$heading-typeface;
+  font-size: 18px;
+}
+
+h3 {
+  font-family:$secondary-typeface;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+h4 {
+  font-family:$secondary-typeface;
+  }
+
+h5 {
+  font-family:$main-typeface;
+}
+
+h6 {
+  font-family:$heading-typeface;
+}
+
+a {
+  font-family:$main-typeface;
+}
+
+p {
+  font-family: $main-typeface;
+}
+
+input {
+  font-family: $main-typeface;
+}
+
+label {
+  font-family: $main-typeface;
+  font-size: 22px;
+}
+
+
+select {
+  font-family: $main-typeface;
+}
+
+
+/* Navigation*/
+
+#logo {
+
+  @include desktop {
+  padding-top: 15px;
+  margin-left: -20px;
+  }
+
+  @include tablet {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  }
+
+  @include mobile {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  }
+}
+
+nav {
+  background-color: $primary-color;
+  border-bottom: 5px solid $primary-accent;
+  }
+
+div.row.collapse.postfix-round input {
+  border-radius: 20px;
+  margin-left: 20px;
+}
+
+#nav-button, #foot-button {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  margin-left: -20px;
+}
+
+#browse {
+
+  @include desktop {
+  margin-left: 20px;
+  }
+}
+
+#sign {
+
+  @include desktop {
+  margin-right: -60px;
+  }
+}
+
+#search_bar {
+
+  @include desktop {
+  margin-left: 15px;
+  }
+}
+
+
+ul.inline-list {
+      margin-top: 58px;
+      text-align: center;
+
+      @include tablet {
+      float: none;
+      text-align: center;
+      margin-top: 10px;
+      }
+
+      @include mobile {
+      margin-top: 5px;
+      text-align: center;
+      }
+
+      li {
+      font-family: $main-typeface;
+      font-size: 14px;
+
+      @include tablet {
+      display: inline-block;
+      font-size: 18px;
+      text-align: center;
+      float: none;
+      }
+
+      @include mobile {
+      display: inline-block;
+      text-align: center;
+      float: none;
+      }
+
+        a {
+        color: $text-color;
+
+          &:hover {
+          color: $primary-accent;
+          }
+        }
+      }
+    }
+
+ul#right
+
+.inline-list li {
+
+  @include mobile {
+      display: inline-block;
+      font-size: 18px;
+      text-align: center;
+      float: none;
+  }
+
+  a {
+        color: $text-color;
+
+          &:hover {
+          color: $primary-accent;
+          }
+        }
+
+}
+
+
+div.row.collapse.postfix-round {
+  margin-top: 50px;
+
+  @include tablet {
+  margin-top: 10px;
+  }
+
+  @include mobile {
+  margin-top: 5px;
+  }
+
+
+  input {
+  font-family: $main-typeface;
+  }
+
+  a.button.postfix {
+  background-color: $primary-accent;
+  color: $text-color;
+  margin-right: -10px;
+  }
+}
+ 
+ul.inline-list#right {
+
+  @include desktop {
+  margin-top: 50px;
+  }
+
+  li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  }
+
+  @include tablet {
+  display: inline-block;
+  float: none;
+  margin-top: 10px;
+  }
+
+  @include mobile {
+  display: inline-block;
+  float: none;
+  margin-top: 5px;
+  }
+
+  li {
+  font-family: $main-typeface;
+  font-size: 14px;
+
+  @include tablet{
+  font-size: 18px;
+  text-align: center;
+  }
+  
+    a {
+    color: $text-color;
+
+    &:hover {
+          color: $primary-accent;
+          }
+    }
+  }
+}
+
+/* Hero Section */
+
+div#header {
+  background-image: url('../images/HeroImage.jpg');
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  min-height: 700px; 
+}
+
+.overlay {
+  height: 700px;
+  width: 100%;
+  position: absolute;
+  background: rgba(105, 210, 231, .1);
+
+  }
+
+
+div#marketing.large-10.small-centered.columns {
+  text-align: center; 
+  padding-top: 350px;
+
+  h1, {
+    color: #fff;
+    text-shadow: 3px 3px #000;
+ }
+
+  h4 {
+    text-shadow: 1px 1px #fff;
+    font-size: 24px;
+  }
+}
+
+
+/* Featured Campaign */
+
+  div#featured {
+      background-color:$background-color;
+      border-top: 5px solid $primary-color;
+      border-bottom: 5px solid $primary-color;
+      padding-top:50px;
+      padding-bottom: 50px;
+
+  
+    h2 {
+    text-align: center;
+    font-size: 36px;
+    }
+    }
+  
+
+  div#feature_photo {
+    background-image: url('../images/CampaignTwo.jpg');
+    background-position: center; 
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+}
+
+div#featuretext.large-6.columns {
+  margin-left: -25px;
+}
+
+#featuretext {
+
+  @include desktop {
+  margin-top: -10px;
+  }
+}
+
+a#featurebutton.custom-button-class {
+  $button-font-family: $secondary-typeface;
+}
+
+.custom-button-class {
+  @include button(
+    $bg:$secondary-color
+  );
+}
+
+/* Popular Campaigns */
+
+
+div#popular {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+div#popular.container {
+  background-color: rgba(224, 228, 204, 0.5);
+
+  h4 {
+    text-align: center;
+    }
+  }
+ 
+
+div#popular p, h3, h5 {
+  text-align: center;
+}
+
+.campaign_photo {
+  background-position: center; 
+  background-size: cover;
+  height: 250px;
+  margin-bottom: 10px;
+  width: 100%;
+  
+}
+
+div#campaign_1.campaign_photo {
+  background-image: url('../images/CampaignOne.jpg');
+  background-position: center; 
+}
+
+div#campaign_2.campaign_photo {
+  background-image: url('../images/featuredphoto.jpg');
+  background-position: center; 
+}
+
+div#campaign_3.campaign_photo {
+  background-image: url('../images/CampaignThree.jpg');
+  background-position: center; 
+}
+
+/* How We Work */
+
+div#work {
+  background-color: $background-color;
+  border-top: solid 5px $secondary-color;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+  
+  p {
+  text-align: center
+
+  h5 {
+    text-align: center;
+  }
+  }
+
+div#money img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 45px;
+  vertical-align: middle;
+}
+
+div#time img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div#start img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div#money p{
+  text-align: center;
+}
+
+div#time p{
+  text-align: center;
+}
+
+div#start p {
+  text-align: center;
+}
+
+div#money.large-4.columns h6{
+  text-align: center;
+}
+
+div#time.large-4.columns h6{
+  text-align: center;
+}
+
+div#start.large-4.columns h6{
+  text-align: center;
+}
+
+#button_build {
+  text-align: center;
+}
+
+/* Footer */
+
+
+footer.container {
+  background-color: $primary-color;
+  border-top: 5px solid $primary-accent;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  }
+
+div#copyright.large-3.columns {
+  margin-top: 65px;
+
+  @include tablet {
+  text-align: center;
+  }
+
+
+  @include tablet {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  @include mobile {
+    margin-top: 10px;
+    text-align: center;
+  }
+}
+
+#p-foot {
+  @include desktop {
+  margin-top: 55px;
+  text-align: center;
+  font-size: 14px;
+  }
+
+  @include tablet {
+  text-align: center;
+  }
+
+  @include mobile {
+  text-align: center;
+  }
+}
+
+/*---------- Create Campaign Page-----------*/
+
+#create {
+  background-color: rgba(224, 228, 204, 0.5);
+}
+
+#create_heading {
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  @include tablet {
+  text-align: center;
+  }
+
+  @include mobile {
+  text-align: center;
+  }
+}
+
+.container {
+  background-color: rgba(224, 228, 204, 0.5);
+}
+
+#description {
+  height: 200px;
+  margin-bottom: 15px;
+}
+
+textarea {
+  height: 843px;
+  margin-bottom: 50px;
+  
+}
+
+input#description {
+  height: 200px;
+
+}
+
+input#media {
+  height: 200px;
+  background-color: #ffffff;
+}
+
+span.numbers {
+  font-family: $heading-typeface;
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+#create-header {
+  
+  @include desktop {
+  text-align: left;
+  margin-left: -18px;
+  }
+}
+
+#create-button {
+  
+  @include desktop {
+  text-align: right;
+  margin-right: -18px;
+  }
+
+  @include tablet {
+  text-align: center;
+  }
+
+  @include mobile {
+  text-align: center;
+  }
+}
+
+
+/*------------ Campaign Page ----------*/
+
+#campaign_name {
+  padding-top: 20px;
+}
+
+div#Campaign_View {
+    background-image: url('../images/CampaignView.jpg');
+    background-position: center; 
+    background-size: cover;
+    height: 350px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.tabs {
+  border-bottom: 2px solid $primary-color;
+}
+
+.tab-title.active a {
+  background-color:$background-color;
+  font-family: $main-typeface;
+}
+
+.tab-title {
+  font-family: $main-typeface;
+}
+
+
+.tabs-content {
+  padding-top: 10px;
+}
+
+.doughnut h4 {
+        position: relative;
+        top:-160px;
+        text-align: center;
+        margin:0 auto;
+        display:block;
+        span {
+          display:block;
+          font-weight: 300;
+          font-size: 14px;
+  }
+  }
+
+.doughnut h5 {
+  margin-top: -40px;
+  padding-bottom: 20px;
+}
+
+hr {
+  background-color: $text-color;
+  border: 1px solid $primary-accent;
+  width: 100%;
+}
+
+/* -------Explore Page ------- */
+
+#sidebar {
+
+  h5 {
+  text-align: left;
+  font-weight: lighter;
+  }
+
+  .side_label {
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding-bottom: 10px;
+  }
+
+  @include desktop {
+  margin-top: 65px;
+  width: 25%;
+  float: left;
+  }
+
+  @include tablet {
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%
+  }
+
+  @include mobile {
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%
+  }
+}
+
+#content_main {
+
+  @include desktop {
+  width: 70%;
+  float: right;
+  }
+
+  @include tablet {
+  padding-left: 20px;
+  padding-right: 20px;
+  }
+
+  @include mobile {
+  width: 100%;
+  }
+  }
+
+ul.medium-block-grid-3 {
+  @include desktop {
+  width: 111%;
+  margin-left: -38px;
+  }
+}
+
+#explore {
+  padding-top: 20px;
+
+  h1 {
+
+  @include desktop {
+  margin-left: -15px;
+  }
+
+  @include tablet {
+  text-align: center;
+  }
+
+  @include mobile {
+  text-align: center;
+  }
+}
+}
+
+#recent h3 {
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding-bottom: 10px;
+}
+
+#recent h5 {
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+#campaign_hidden {
+  display: none;
+}
+
+
+
+
+
+/* ---------Edit Campaign Page -------- */
+
+#campaign-edit {
+  
+  @include desktop {
+  text-align: right;
+  }
+
+  @include tablet {
+  text-align: center;
+  }
+
+  @include mobile {
+  text-align: center;
+  }
+}
+
+
+
+

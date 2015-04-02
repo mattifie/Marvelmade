@@ -1,0 +1,433 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation</title>
+    <link rel="stylesheet" href="stylesheets/app.css" />
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <script src="//use.typekit.net/mcq4eje.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+  </head>
+  <body>
+    
+  <!--Top Nav Bar -->
+ <nav>
+      <div class="row" id="nav">
+        <div class="large-3 small-12 columns small-text-center ">
+          <h1><img src="images/MarvelmadeLogo_Small.png"/></h1>
+        </div>
+        <div class="large-2 small-12 columns small-text-center">
+          <ul class="inline-list" id="left">
+            <li><a href="#">EXPLORE</a></li>
+            <li><a href="#" data-reveal-id="CreateSignInModal">CREATE</a></li>
+          </ul>
+        </div>
+        <div class="large-5 small-12 columns small-text-center">
+              <div class="row collapse postfix-round">
+                <div class="small-9 columns" class="nav-input">
+                  <input type="text" placeholder="Name or type of campaign">
+                </div>
+                <div class="small-3 columns">
+                  <a href="#" class="button postfix" id="nav-button">GO</a>
+                </div>
+              </div>
+        </div>
+        <div class="large-2 small-12 columns small-text-center">
+          <ul class="inline-list" id="right">
+          <li><a href="#" data-reveal-id="SignInModal">Sign In</a>
+          </li>
+          <li><a href="#" data-reveal-id="SignInModal">Sign Up</a>
+        </li>
+          </ul>
+        </div>
+      </div>
+      </nav> 
+  <!-- Top Nav Bar end -->
+
+  <!-- Campaign Summary -->
+    <div id="summary">
+        <div class="row" id="campaign_name">
+          <div class="large-12 columns">
+            <h1>The Recyclery</h>
+          </div>
+        </div>
+    <section>
+      <div class="row">
+        <div class="large-8 columns">
+          <div id="Campaign_View"></div>
+            <h3 class="text-left">About The Recyclery</h3>
+                  <p class="text-left">Lorem ipsum dolor sit amet, duo ei meis animal petentium. Amet graeci utroque vim cu, in mel dolores neglegentur. Eum munere aeterno definiebas ea, nam mutat affert efficiantur an. Minim delenit eu cum, id eam iudico postulant, ne vis solum delenit.</p>
+                  <p class="text-left">Lorem ipsum dolor sit amet, duo ei meis animal petentium. Amet graeci utroque vim cu, in mel dolores neglegentur. Eum munere aeterno definiebas ea, nam mutat affert efficiantur an. Minim delenit eu cum, id eam iudico postulant, ne vis solum delenit. Lorem ipsum dolor sit amet, duo ei meis animal petentium. Amet graeci utroque vim cu, in mel dolores neglegentur. Eum munere aeterno definiebas ea, nam mutat affert efficiantur an. Minim delenit eu cum, id eam iudico postulant, ne vis solum delenit.</p>    
+        </div>
+          <div class="large-4 columns text-center doughnut">
+            <h3>Funding Progress</h3>
+            <canvas id="TotalDonations" width="250" height="250"></canvas>
+            <h4>20.4% <span>funded</span></h4>
+            <h5>$1,112 of $5,500 raised <br> Accepting time donors</h5>
+               <label>DONATE NOW</label>
+                <a href="#" class="button expand" id="featurebutton" data-reveal-id="DonateTimeModal">Donate Time</a>
+                <a href="#" class="button expand" id=
+                "featurebutton" data-reveal-id="DonateMoneyModal">Donate Money</a>
+                <h3>Spread the word.</h3>
+                <ul class="no-bullet"> 
+                  <li><a href="#"><img src="images/Facebook.png" alt="Share on Facebook"></a></li> 
+                  <li><a href="#"><img src="images/LinkedIn.png" alt="Share on LinkedIn"></a></li> 
+                  <li><a href="#"><img src="images/Twitter.png" alt="Share on Twitter"></a></li> 
+                </ul>
+          </div>
+      </div>
+    </section>
+
+<!-- Campaign Summary End -->
+
+<!---- Comments & Updates ---->
+
+    <div id ="tabs">
+      <ul class="tabs" data-tab role="tablist">
+        <li class="tab-title active" role="presentational" ><a href="#panel2-1" role="tab" tabindex="0" aria-selected="true" controls="panel2-1">Updates</a></li>
+        <li class="tab-title" role="presentational" ><a href="#panel2-2" role="tab" tabindex="0"aria-selected="false" controls="panel2-2">Comments</a></li>
+      </ul>
+    </div>
+
+      <div class="tabs-content">
+        <section role="tabpanel" aria-hidden="false" class="content active" id="panel2-1">     
+          <div class="row">
+            <div class="large-2 columns small-3 text-center"><img src="images/CampaignOwner1.jpg"/>
+              <p>Martha Edwards</p>
+            </div>
+            <div class="large-10 columns">
+              <p>Thanks to everyone who donated! We're making good progress. Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
+              <ul class="inline-list">
+                <li><a href="">Share</a></li>
+              </ul>
+            </div>
+            <hr>
+          </div>
+           <div class="row">
+            <div class="large-2 columns small-3 text-center"><img src="images/CampaignOwner2.jpg"/>
+              <p>Emma Brooks</p>
+            </div>
+            <div class="large-10 columns">
+              <p> We've added two new time donors this week! Because of your generosity, we're able to kickstart our photography program.Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
+              <ul class="inline-list">
+                <li><a href="">Share</a></li>
+              </ul>
+            </div>
+            <hr>
+          </div>
+           <div class="row">
+            <div class="large-2 columns small-3 text-center"><img src="images/CampaignOwner1.jpg"/>
+              <p>Martha Edwards</p>
+            </div>
+            <div class="large-10 columns">
+              <p>We just launched this Marvelmade campaign, and have already seen a good deal of support! If you'd like to know more about this campaign and time donor opportunities, stop by Williams High School at 5pm this coming Thursday. We'll fill you in :) Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
+              <ul class="inline-list">
+                <li><a href="">Share</a></li>
+              </ul>
+            </div>
+            <hr>
+          </div>
+           <div class="row">
+            <div class="large-2 columns small-3 text-center"><img src="images/CampaignOwner2.jpg"/>
+              <p>Emma Brooks</p>
+            </div>
+            <div class="large-10 columns">
+              <p> Hello, world! We are beyond excited to start working toward improving and estabishing kick-ass afterschool programs.Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
+              <ul class="inline-list">
+                <li><a href="">Share</a></li>
+              </ul>
+            </div>
+            <hr>
+          </div>
+        </section>
+
+        <section role="tabpanel" aria-hidden="true" class="content" id="panel2-2">
+          <div class="row">
+            <div class="large-2 columns small-3 text-center"><img src="images/Man2.jpg"/>
+              <p>Willie Holmes</p>
+            </div>
+            <div class="large-10 columns">
+              <p> Guys, this is exactly what public education needs. I'm down to donate in both ways. Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
+              <ul class="inline-list">
+                <li><a href="">Share</a></li>
+              </ul>
+            </div>
+            <hr>
+          </div>
+           <div class="row">
+            <div class="large-2 columns small-3 text-center"><img src="images/Man3.jpg"/>
+              <p>Robert Miller</p>
+            </div>
+            <div class="large-10 columns">
+              <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
+              <ul class="inline-list">
+                <li><a href="">Share</a></li>
+              </ul>
+            </div>
+            <hr>
+          </div>
+           <div class="row">
+            <div class="large-2 columns small-3 text-center"><img src="images/Man1.jpg"/>
+              <p>Austin Foster</p>
+            </div>
+            <div class="large-10 columns">
+              <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
+              <ul class="inline-list">
+                <li><a href="">Share</a></li>
+              </ul>
+            </div>
+            <hr>
+          </div>
+           <div class="row">
+            <div class="large-2 columns small-3 text-center"><img src="images/Lady.jpg"/>
+              <p>Lizzie Grant</p>
+            </div>
+            <div class="large-10 columns">
+              <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
+              <ul class="inline-list">
+                <li><a href="">Share</a></li>
+              </ul>
+            </div>
+            <hr>
+          </div>
+          <div class="row">
+            <div class="large-2 columns small-3 text-center"><img src="images/Man4.jpg"/>
+              <p>Jesse Lucas</p>
+            </div>
+            <div class="large-10 columns">
+              <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
+              <ul class="inline-list">
+                <li><a href="">Share</a></li>
+              </ul>
+            </div>
+            <hr>
+          </div>
+          <div class="row">
+            <div class="large-2 columns small-3 text-center"><img src="images/Dude.jpg"/>
+              <p>Sean Powell</p>
+            </div>
+            <div class="large-10 columns">
+              <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
+              <ul class="inline-list">
+                <li><a href="">Share</a></li>
+              </ul>
+            </div>
+            <hr>
+          </div>
+        </section>
+      </div>
+    </div>
+<!-- Comments & Updates End -->
+
+
+<!-- Footer -->
+      <footer class="container">
+        <div class="row">
+          <div class="large-3 small-12 columns">
+              <ul class="inline-list">
+                <li><a href="#" data-reveal-id="SignInModal">Sign In</a></li>
+                <li><a href="#" data-reveal-id="SignInModal">Sign Up</a></li>
+                <li><a href="#">Explore</a></li>
+              </ul>
+          </div>
+          <div class="large-6 columns">
+              <div class="row collapse postfix-round">
+                <div class="small-9 columns">
+                  <input type="text" placeholder="Search Away">
+                </div>
+                <div class="small-3 columns">
+                  <a href="#" class="button postfix" id="foot-button">GO</a>
+                </div>
+              </div>
+          </div>
+            <div class="large-3 small-12 columns">
+              <p id="p-foot">© 2015 Marvelmade</p>
+            </div>
+          </div>
+    </footer>
+
+
+<!-- Donate Time Modal -->
+  <div id="DonateTimeModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+    <h2>Want to donate time?</h2>
+    <p>Submit your email address, and you will be contacted shortly for next steps. Thanks a million!</p>
+          <div class="row">
+            <div class="large-6 columns">
+              <form>
+                <label>First Name</label>
+                <input type="text" placeholder="Louise" required>
+              </form>
+            </div>
+              <div class="large-6 columns">
+                <label>Last Name</label>
+                <input type="text" placeholder="Belcher" required>
+              </form>
+            </div>
+
+          <div>
+
+          <div class="large-12 columns">
+              <form>
+                <label>Email</label>
+                <input type="text" placeholder="louisebelcher@bobsburgers.com" required>
+              </form>
+          </div>
+          <a href="#" class="button">Submit</a>
+          <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+      </div>
+  </div>
+<!-- Donate Time Modal End -->
+
+<!-- Donate Money Modal -->
+  <div id="DonateMoneyModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+      <h2>Donation Information</h2>
+            <div class="row">
+              <div class="large-8 columns">
+                <form>
+                  <label>Name on Card</label>
+                  <input type="text" placeholder="Louise Belcher" required>
+                </form>
+              </div>
+              <div class="large-4 columns">
+                <form>
+                  <label>Donation Amount</label>
+                  <input type="text" placeholder="$50.00" required>
+                </form>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="large-4 columns">
+                <form class="custom">
+                      <label>
+                        Payment Type
+                      </label>
+                        <select>
+                          <option value="Visa">Visa</option>
+                          <option value="Mastercard">Mastercard</option>
+                          <option value="American Express">American Express</option>
+                          <option value="Discover">Discover</option>
+                        </select>
+                </form>
+              </div>
+              <div class="large-8 columns">
+                <form>
+                  <label>Card Number</label>
+                  <input type="text" placeholder="4490 xxxx xxxx...." required>
+                </form>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="large-3 columns">
+                <form>
+                  <label>CVV</label>
+                  <input type="text" placeholder="xxx" required>
+                </form>
+              </div>
+              <div class="large-3 columns">
+                <form>
+                  <label>Expiration Date</label>
+                  <input type="text" placeholder="03/17/17" required>
+                </form>
+              </div>
+              <div class="large-6 columns">
+                <form>
+                  <label>Email Address (for a receipt!)</label>
+                  <input type="text" placeholder="anyone@gmail.com" required>
+                </form>
+              </div>
+            </div>
+              <a href="#" class="button">Submit</a>
+              <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+    </div>
+
+<!-- Donate Money Modal End -->
+
+
+ <!--Sign In/Sign Up Modal -->
+
+        <div id="SignInModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+          <div class="row">
+            <div class="large-5 columns">
+              <h2>Sign In</h2>
+              <a href="#" class="button">Login with Facebook</a>
+              <form>
+                <label>Email</label>
+                <input type="text" placeholder="Your email address goes here" required>
+              </form>
+                <label>Password</label>
+                <input type="text" placeholder="Your password goes here" required>
+              </form>
+              <a href="#" class="button">Sign In</a>
+            </div>
+            <div class="large-5 columns">
+              <h2>Sign Up</h2>
+              <a href="#" class="button">Sign Up with Facebook</a>
+              <form>
+                <label>Email</label>
+                <input type="text" placeholder="Your email address goes here" required>
+              </form>
+                <label>Password</label>
+                <input type="text" placeholder="Your password goes here" required>
+              </form>
+              </form>
+                <label>Confirm Password</label>
+                <input type="text" placeholder="One more time!" required>
+              </form>
+              <a href="#" class="button">Sign Up</a>
+            </div>
+          </div>
+          <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+        </div>
+
+    <!--Sign Up Modal End -->
+
+    <!-- "Create" Sign In Modal-->
+  <div id="modal_container">
+   <div id="CreateSignInModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+    <h2>Sign in or sign up to continue, please!</h2>
+          <div class="row">
+            <div class="large-6 columns">
+              <h4>Sign In</h4>
+              <a href="#" class="button">Login with Facebook</a>
+              <form>
+                <label>Email</label>
+                <input type="text" placeholder="Your email address goes here" required>
+              </form>
+                <label>Password</label>
+                <input type="text" placeholder="Your password goes here" required>
+              </form>
+              <a href="#" class="button">Sign In</a>
+            </div>
+            <div class="large-6 columns">
+              <h4>Sign Up</h4>
+              <a href="#" class="button">Sign Up with Facebook</a>
+              <form>
+                <label>Email</label>
+                <input type="text" placeholder="Your email address goes here" required>
+              </form>
+                <label>Password</label>
+                <input type="text" placeholder="Your password goes here" required>
+              </form>
+              </form>
+                <label>Confirm Password</label>
+                <input type="text" placeholder="One more time!" required>
+              </form>
+              <a href="#" class="button">Sign Up</a>
+            </div>
+          </div>
+          <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+        </div>
+      </container>
+  <!-- "Create" Sign In Modal End -->
+
+
+<!--Don't touch this--> 
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="js/Chart.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

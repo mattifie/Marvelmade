@@ -1,0 +1,255 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation</title>
+    <link rel="stylesheet" href="stylesheets/app.css" />
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <script src="//use.typekit.net/mcq4eje.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+  </head>
+  <body>
+
+  <!--Top Nav Bar -->
+  <nav>
+      <div class="row" id="nav">
+        <div class="large-3 small-12 columns small-text-center">
+          <img id="logo" src="images/MarvelmadeLogo_Small.png"/>
+        </div>
+        <div class="large-2 small-12 columns small-text-center" id="browse">
+          <ul class="inline-list" id="left">
+            <li><a href="explore.html">EXPLORE</a></li>
+            <li><a href="#" data-reveal-id="CreateSignInModal">CREATE</a></li>
+          </ul>
+        </div>
+        <div class="large-5 small-12 columns small-text-center" id="search_bar">
+              <div class="row collapse postfix-round">
+                <div class="small-9 columns" class="nav-input">
+                  <input type="text" placeholder="Name or type of campaign">
+                </div>
+                <div class="small-3 columns">
+                  <a href="#" class="button postfix" id="nav-button">GO</a>
+                </div>
+              </div>
+        </div>
+        <div class="large-2 small-12 columns small-text-center" id="sign">
+          <ul class="inline-list" id="right">
+          <li><a href="#" data-reveal-id="SignInModal">Sign In / Sign Up</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+      </nav> 
+  <!-- Top Nav Bar end -->
+
+  <!-- "Create" Sign In Modal-->
+  <div id="modal_container">
+   <div id="CreateSignInModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+    <h2>Sign in or sign up to continue, please!</h2>
+          <div class="row">
+            <div class="large-6 columns">
+              <h4>Sign In</h4>
+              <a href="#" class="button">Login with Facebook</a>
+              <form>
+                <label>Email</label>
+                <input type="text" placeholder="Your email address goes here" required>
+              </form>
+                <label>Password</label>
+                <input type="text" placeholder="Your password goes here" required>
+              </form>
+              <a href="createcampaign.html" class="button">Sign In</a>
+            </div>
+            <div class="large-6 columns">
+              <h4>Sign Up</h4>
+              <a href="#" class="button">Sign Up with Facebook</a>
+              <form>
+                <label>Email</label>
+                <input type="text" placeholder="Your email address goes here" required>
+              </form>
+                <label>Password</label>
+                <input type="text" placeholder="Your password goes here" required>
+              </form>
+              </form>
+                <label>Confirm Password</label>
+                <input type="text" placeholder="One more time!" required>
+              </form>
+              <a href="createcampaign.html" class="button">Sign Up</a>
+            </div>
+          </div>
+          <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+        </div>
+      </container>
+  <!-- "Create" Sign In Modal End -->
+
+  <!--Sign In/Sign Up Modal -->
+      <div id="modal_container">
+        <div id="SignInModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+          <div class="row">
+            <div class="large-6 columns">
+              <h2>Sign In</h2>
+              <a href="#" class="button">Login with Facebook</a>
+              <form>
+                <label>Email</label>
+                <input type="text" placeholder="Your email address goes here" required>
+              </form>
+                <label>Password</label>
+                <input type="text" placeholder="Your password goes here" required>
+              </form>
+              <a href="#" class="button">Sign In</a>
+            </div>
+            <div class="large-6 columns">
+              <h2>Sign Up</h2>
+              <a href="#" class="button">Sign Up with Facebook</a>
+              <form>
+                <label>Email</label>
+                <input type="text" placeholder="Your email address goes here" required>
+              </form>
+                <label>Password</label>
+                <input type="text" placeholder="And your password goes here." required>
+              </form>
+              </form>
+                <label>Confirm Password</label>
+                <input type="text" placeholder="Password, one more time!" required>
+              </form>
+              <a href="#" class="button">Sign Up</a>
+            </div>
+          </div>
+          <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+        </div>
+      </div>
+
+    <!--Sign Up Modal End -->
+
+<!-- Hero Image Slider -->
+    <div id="header">
+        <div class="overlay"></div>
+              <header class="large-12 columns">
+              </header>
+              <div id="marketing" class="large-10 small-centered columns">
+                  <h1>Turn Afterschool Into Superschool</h1>
+                  <h4>Use your time, talent &amp generosity to make big changes.</h4>
+                  <br>
+                  <a href="explore.html" class="button">MAKE IT HAPPEN</a>
+              </div>
+            </div>
+      </div>
+<!--Hero Image Slider End -->
+      
+<!--Featured Campaign Section -->
+  <div id="featured">
+    <div class="row">
+      <h2>Marvelmade Featured Campaign</h2>
+      <br>
+      <div class="large-6 small-12 columns">
+        <div id="feature_photo"></div>
+      </div>
+      <div class="large-6 small-12 columns" id="featuretext">
+            <h4 class= "text-left">THE RECYCLERY</h4>
+            <p class= "text-left">The Recyclery brings unsuspecting bike mechanics, environmental enthusiasts, and volunteers together in completing an unlikely task: restoring old and discarded bicycles. The program focuses on drawing students from area high schools to comprise diverse groups of bike-fixing volunteers. In these groups, students learn practical bike mechanics and creative problem solving from a local bike expert. <p>
+            <p class="text-left">Furthermore, volunteer groups often become tight-knit social groups that continue to foster the intellectual & creative environment The Recyclery strives to build.</p>
+    </div>
+  </div>
+  <div class= "row text-center">
+      <br>
+      <br>
+      <h4 class="text-center">WANT TO SUPPORT CAMPAIGNS LIKE THESE?</h4>
+      <br>
+      <a href="campaignpage.html" class="custom-button-class text-center" id="featurebutton">SUPPORT NOW</a>
+      </div>
+</div>
+    
+<!--Featured Campaign Section End -->
+     
+<!-- Popular Campaigns Section -->
+    <div>
+      <div class="container" id="popular">
+      <div class="row">
+        <h3>POPULAR CAMPAIGNS</h3>
+        <br>
+        <div class="large-4 small-12 columns">
+          <div class="campaign_photo" id="campaign_1"></div>
+          <h4>Photo Finish</h4>
+          <p>Anyone who thinks they might like photography is bound to flock to Photo Finish. Geared toward those with even a fleeting interest in the medium, Photo Finish teaches participants the art & importance of journalistic photography.</p>
+        </div>
+        
+        <div class="large-4 small-12 columns">
+          <div class="campaign_photo" id="campaign_2"></div>
+          <h4>Afterschool Exchange</h4>
+          <p>Did you ever wonder what school was like in another country? If so, you'll find answers to your questions with the Afterschool Exchange program. Participants share skype sessions and emails with a partner school in another part of the world.</p>
+        </div>
+        
+        <div class="large-4 small-12 columns">
+          <div class="campaign_photo" id="campaign_3"></div>
+          <h4>Improv(e)</h4>
+          <p>Kids are inherently creative. Improv(e) engages gradeschool aged children in the art of improvisational acting. Spur of the moment plays and comic sketches are best written and acted by kids – we promise. Improv(e) = self-expression and confidence.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Popular Campaigns Section End --> 
+
+<!--How We Work Section -->
+      <div class="container" id="work">
+       <div class="row" id="how_we_work">
+        <h3 class="text-center">HOW WE WORK</h3>
+        <br>
+        <div class="large-4 small-12 columns text-center" id="money">
+         <img src="images/Donate.png">
+          <h6 class="text-center">Donate Money</h6>
+          <p class="text-center">Donate money to any of these awesome campaigns.</p>
+        </div>
+        
+        <div class="large-4 small-12 columns text-center" id="time">
+           <img src="images/Clock.png">
+          <h6 class="text-center">Donate Time</h6>
+          <p class="text-center">Volunteer your time and work directly with program participants.</p>
+        </div>
+        
+        <div class="large-4 small-12 columns text-center" id="start">
+           <img src="images/Whistle.png">
+          <h6 class="text-center">Start A Campaign</h6>
+          <p class= "text-center">Jumpstart a campaign and pursue your own idea.</p>
+        </div>
+       </div>
+       <br>
+        <div class="row text-center">
+          <a href="explore.html" class="button">FIND THE RIGHT CAMPAIGN</a>
+        </div>
+      </div>
+<!--How We Work Section End-->
+
+<!-- Footer -->
+      <footer class="container">
+        <div class="row">
+          <div class="large-3 small-12 columns">
+              <ul class="inline-list">
+                <li><a href="#" data-reveal-id="SignInModal">Sign In</a></li>
+                <li><a href="#" data-reveal-id="SignInModal">Sign Up</a></li>
+                <li><a href="explore.html">Explore</a></li>
+              </ul>
+          </div>
+          <div class="large-6 columns">
+              <div class="row collapse postfix-round">
+                <div class="small-9 columns">
+                  <input type="text" placeholder="Search Away">
+                </div>
+                <div class="small-3 columns">
+                  <a href="#" class="button postfix" id="foot-button">GO</a>
+                </div>
+              </div>
+          </div>
+            <div class="large-3 small-12 columns">
+              <p id="p-foot">© 2015 Marvelmade</p>
+            </div>
+          </div>
+    </footer>
+
+
+<!--Don't touch this--> 
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

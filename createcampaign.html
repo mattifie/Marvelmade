@@ -1,0 +1,184 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation</title>
+    <link rel="stylesheet" href="stylesheets/app.css" />
+    <link rel="stylesheet" href="dropzone-4.0.1/dist/dropzone.css"
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <script src="//use.typekit.net/mcq4eje.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+  </head>
+  <body>
+
+  <!--Top Nav Bar -->
+ <nav>
+      <div class="row" id="nav">
+        <div class="large-3 small-12 columns small-text-center">
+          <img id="logo" src="images/MarvelmadeLogo_Small.png"/>
+        </div>
+        <div class="large-2 small-12 columns small-text-center" id="browse">
+          <ul class="inline-list" id="left">
+            <li><a href="explore.html">EXPLORE</a></li>
+            <li><a href="#" data-reveal-id="CreateSignInModal">CREATE</a></li>
+          </ul>
+        </div>
+        <div class="large-5 small-12 columns small-text-center" id="search_bar">
+              <div class="row collapse postfix-round">
+                <div class="small-9 columns" class="nav-input">
+                  <input type="text" placeholder="Name or type of campaign">
+                </div>
+                <div class="small-3 columns">
+                  <a href="#" class="button postfix" id="nav-button">GO</a>
+                </div>
+              </div>
+        </div>
+        <div class="large-2 small-12 columns small-text-center" id="sign">
+          <ul class="inline-list" id="right">
+          <li><a href="#" data-reveal-id="SignInModal">Sign In / Sign Up</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+      </nav> 
+
+  <!-- Top Nav Bar end -->
+        
+
+ <!---Input Form Header-->
+        <div id="create">
+          <div class="row">
+            <div class="large-12 columns" id="create_heading">
+              <div class="large-8 columns">
+              <h1 id="create-header">Create A Campaign</h1>
+              </div>
+              <div class="large-4 columns" id="create-button">
+                <a href="#" class="fancy radius button">Preview</a>
+                <a href="campaignpage.html" class="fancy radius button">Submit</a>
+              </div>
+            </div>
+          </div>
+        </div> 
+<!--Input Header End-->
+
+<section class="container">
+  <div class="row">
+    <div class="large-4 columns">
+      <div class="working">
+        <label><span class="numbers">1</span>Campaign Name
+          <input type="text" placeholder="The best name you can think of. Go." />
+        </label>
+        <label><span class="numbers">2</span>
+          Goal Amount
+        </label>
+        <select>
+          <option value="500">$500</option>
+          <option value="1000">$1,000</option>
+          <option value="2000">$2,000</option>
+          <option value="5000">$5,000</option>
+          <option value="10,000">$10,000</option>
+        </select>
+      
+          <div class="row collapse">
+              <input type="text" placeholder="Other Amount">
+              <a href="#" class="button postfix">Enter</a>
+          </div>
+               <label><span class="numbers">3</span>Campaign Duration</label>
+                      <ul class="button-group even-4">
+                        <li><a href="#" class="button tiny">30 Days</a></li>
+                        <li><a href="#" class="button tiny">60 Days</a></li>
+                        <li><a href="#" class="button tiny">90 Days</a></li>
+                        <li><a href="#" class="button tiny">120 Days</a></li>
+                      </ul>
+              <label><span class="numbers">4</span>Brief Description
+                <textarea placeholder="Try for a one-sentence pitch" id="description"> </textarea>
+              </label>
+              <label><span class="numbers">5</span>Media Upload
+                <form action="/file-upload"class="dropzone"id="my-awesome-dropzone">
+                </form>
+          </div>
+      <!-- left column stuff -->
+          </div>
+            <div class="large-8 columns">
+              <div class="working">
+                <label><span class="numbers">6</span>Campaign Narrative
+                  <textarea placeholder="Tell us your story, details and all."></textarea>
+                </label>
+              </div>
+            </div>
+      <!-- right column stuff -->
+    </div>
+</section>
+    
+
+  <!-- Footer -->
+     <footer class="container">
+        <div class="row">
+          <div class="large-3 small-12 columns">
+              <ul class="inline-list">
+                <li><a href="#" data-reveal-id="SignInModal">Sign In</a></li>
+                <li><a href="#" data-reveal-id="SignInModal">Sign Up</a></li>
+                <li><a href="explore.html">Explore</a></li>
+              </ul>
+          </div>
+          <div class="large-6 columns">
+              <div class="row collapse postfix-round">
+                <div class="small-9 columns">
+                  <input type="text" placeholder="Search Away">
+                </div>
+                <div class="small-3 columns">
+                  <a href="#" class="button postfix" id="foot-button">GO</a>
+                </div>
+              </div>
+          </div>
+            <div class="large-3 small-12 columns">
+              <p id="p-foot">© 2015 Marvelmade</p>
+            </div>
+          </div>
+    </footer>
+
+<!--Sign In/Sign Up Modal -->
+
+        <div id="SignInModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+          <div class="row">
+            <div class="large-5 columns">
+              <h2>Sign In</h2>
+              <a href="#" class="button">Login with Facebook</a>
+              <form>
+                <label>Email</label>
+                <input type="text" placeholder="Your email address goes here" required>
+                <label>Password</label>
+                <input type="text" placeholder="Your password goes here" required>
+              </form>
+              <a href="#" class="button">Sign In</a>
+            </div>
+            <div class="large-5 columns">
+              <h2>Sign Up</h2>
+              <a href="#" class="button">Sign Up with Facebook</a>
+              <form>
+                <label>Email</label>
+                <input type="text" placeholder="Your email address goes here" required>
+              </form>
+                <label>Password</label>
+                <input type="text" placeholder="Your password goes here" required>
+              </form>
+              </form>
+                <label>Confirm Password</label>
+                <input type="text" placeholder="One more time!" required>
+              </form>
+              <a href="#" class="button">Sign Up</a>
+            </div>
+          </div>
+          <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+        </div>
+
+
+
+<!--Don't touch this--> 
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="dropzone-4.0.1/dist/dropzone.js"></script>
+  </body>
+</html>
