@@ -7,9 +7,9 @@ $text-color: #262626;
 $include-html-button-classes: $include-html-classes;
 $block-grid-media-queries: true;
 
-$main-typeface: "canada-type-gibson", "Gibson", Arial Black, sans-serif; 
+$main-typeface: "canada-type-gibson", "Gibson", sans-serif; 
 $heading-typeface: "cooper-black-std", "Cooper Std", Chunkfive Roman, serif; 
-$secondary-typeface: "Alternate Gothic No. 2", Gibson, Copperplate Gothic Bold, Arial, sans-serif;
+$secondary-typeface:"Pathway Gothic One", Gibson, Copperplate Gothic Bold, Arial, sans-serif;
 
 $mobile-width: 320px;
 $tablet-width: 768px;
@@ -74,7 +74,7 @@ h3 {
 }
 
 h4 {
-  font-family:$secondary-typeface;
+  font-family:$main-typeface;
   }
 
 h5 {
@@ -100,6 +100,7 @@ input {
 label {
   font-family: $main-typeface;
   font-size: 22px;
+  color: $text-color;
 }
 
 
@@ -156,14 +157,7 @@ div.row.collapse.postfix-round input {
 #sign {
 
   @include desktop {
-  margin-right: -60px;
-  }
-}
-
-#search_bar {
-
-  @include desktop {
-  margin-left: 15px;
+  margin-right: -35px;
   }
 }
 
@@ -344,7 +338,11 @@ div#marketing.large-10.small-centered.columns {
   
     h2 {
     text-align: center;
-    font-size: 36px;
+    font-size: 40px;
+
+    @include desktop {
+    margin-bottom: 20px;
+    }
     }
     }
   
@@ -533,137 +531,6 @@ div#copyright.large-3.columns {
   }
 }
 
-/*---------- Create Campaign Page-----------*/
-
-#create {
-  background-color: rgba(224, 228, 204, 0.5);
-}
-
-#create_heading {
-  padding-top: 25px;
-  padding-bottom: 25px;
-
-  @include tablet {
-  text-align: center;
-  }
-
-  @include mobile {
-  text-align: center;
-  }
-}
-
-.container {
-  background-color: rgba(224, 228, 204, 0.5);
-}
-
-#description {
-  height: 200px;
-  margin-bottom: 15px;
-}
-
-textarea {
-  height: 843px;
-  margin-bottom: 50px;
-  
-}
-
-input#description {
-  height: 200px;
-
-}
-
-input#media {
-  height: 200px;
-  background-color: #ffffff;
-}
-
-span.numbers {
-  font-family: $heading-typeface;
-  font-size: 30px;
-  margin-right: 10px;
-}
-
-#create-header {
-  
-  @include desktop {
-  text-align: left;
-  margin-left: -18px;
-  }
-}
-
-#create-button {
-  
-  @include desktop {
-  text-align: right;
-  margin-right: -18px;
-  }
-
-  @include tablet {
-  text-align: center;
-  }
-
-  @include mobile {
-  text-align: center;
-  }
-}
-
-
-/*------------ Campaign Page ----------*/
-
-#campaign_name {
-  padding-top: 20px;
-}
-
-div#Campaign_View {
-    background-image: url('../images/CampaignView.jpg');
-    background-position: center; 
-    background-size: cover;
-    height: 350px;
-    margin-bottom: 20px;
-    width: 100%;
-}
-
-.tabs {
-  border-bottom: 2px solid $primary-color;
-}
-
-.tab-title.active a {
-  background-color:$background-color;
-  font-family: $main-typeface;
-}
-
-.tab-title {
-  font-family: $main-typeface;
-}
-
-
-.tabs-content {
-  padding-top: 10px;
-}
-
-.doughnut h4 {
-        position: relative;
-        top:-160px;
-        text-align: center;
-        margin:0 auto;
-        display:block;
-        span {
-          display:block;
-          font-weight: 300;
-          font-size: 14px;
-  }
-  }
-
-.doughnut h5 {
-  margin-top: -40px;
-  padding-bottom: 20px;
-}
-
-hr {
-  background-color: $text-color;
-  border: 1px solid $primary-accent;
-  width: 100%;
-}
 
 /* -------Explore Page ------- */
 
@@ -758,16 +625,69 @@ ul.medium-block-grid-3 {
   display: none;
 }
 
+/*---------- Create Campaign Page-----------*/
 
+#create {
+  background-color: rgba(224, 228, 204, 0.5);
+}
 
+#create_heading {
+  padding-top: 25px;
+  padding-bottom: 25px;
 
+  @include tablet {
+  text-align: center;
+  }
 
-/* ---------Edit Campaign Page -------- */
+  @include mobile {
+  text-align: center;
+  }
+}
 
-#campaign-edit {
+.container {
+  background-color: rgba(224, 228, 204, 0.5);
+}
+
+#description {
+  height: 200px;
+  margin-bottom: 15px;
+}
+
+textarea {
+  height: 840px;
+  margin-bottom: 50px;
+  
+}
+
+input#description {
+  height: 200px;
+
+}
+
+input#media {
+  height: 200px;
+  background-color: #ffffff;
+}
+
+span.numbers {
+  font-family: $heading-typeface;
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+#create-header {
+  
+  @include desktop {
+  text-align: left;
+  margin-left: -18px;
+  }
+}
+
+#create-button {
   
   @include desktop {
   text-align: right;
+  margin-right: -18px;
   }
 
   @include tablet {
@@ -779,6 +699,140 @@ ul.medium-block-grid-3 {
   }
 }
 
+
+/*------------ Campaign Page ----------*/
+
+#campaign_name {
+  padding-top: 20px;
+}
+
+div#Campaign_View {
+    background-image: url('../images/CampaignView.jpg');
+    background-position: center; 
+    background-size: cover;
+    height: 350px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.tabs {
+  border-bottom: 2px solid $primary-color;
+}
+
+.tab-title.active a {
+  background-color:$background-color;
+  font-family: $main-typeface;
+}
+
+.tab-title {
+  font-family: $main-typeface;
+}
+
+
+.tabs-content {
+  padding-top: 10px;
+}
+
+#doughnut {
+        position: relative;
+        top:-160px;
+        text-align: center;
+        margin:0 auto;
+        display:block;
+        span {
+          display:block;
+          font-weight: 300;
+          font-size: 14px;
+  }
+  }
+
+.doughnut h5 {
+  margin-top: -40px;
+  padding-bottom: 20px;
+}
+
+#Donate_Call {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+hr {
+  background-color: $text-color;
+  border: 1px solid $primary-accent;
+  width: 100%;
+}
+
+#updates {
+  padding-bottom: 20px;
+}
+
+#updates h3 {
+
+  text-transform: uppercase;
+
+  @include desktop {
+  text-align: left;
+  }
+}
+
+#updates span {
+  font-weight: 100;
+}
+
+#updates p {
+
+  @include desktop {
+  padding-bottom: 20px;
+  padding-top: 10px;
+  }
+
+}
+
+#comments {
+
+  span {
+  font-weight: 100;
+  }
+
+  p {
+
+  @include desktop {
+  padding-bottom: 20px;
+  padding-top: 10px;
+  }
+
+  }
+
+  h3 {
+  text-transform: uppercase;
+  padding-bottom: 20px;
+
+  @include desktop {
+  text-align: left;
+  }
+}
+}
+
+.donor {
+  background-color: $primary-accent;
+  padding-top: 40px;
+  padding-right: 10px;
+  margin: 0px 60px 20px 60px;
+
+}
+
+.comment {
+  padding-top: 40px;
+  padding-right: 10px;
+  margin: 0px 60px 20px 60px;
+}
+
+.owner {
+  background-color: $secondary-accent;
+  padding-top: 40px;
+  padding-right: 10px;
+  margin: 0px 60px 20px 60px;
+}
 
 
 

@@ -12,18 +12,20 @@
   <body>
     
   <!--Top Nav Bar -->
- <nav>
+   <nav>
       <div class="row" id="nav">
-        <div class="large-3 small-12 columns small-text-center ">
-          <h1><img src="images/MarvelmadeLogo_Small.png"/></h1>
+        <div class="large-3 small-12 columns small-text-center">
+          <a href="index.html">
+          <img id="logo" src="images/MarvelmadeLogo_Small.png"/>
+          </a>
         </div>
-        <div class="large-2 small-12 columns small-text-center">
+        <div class="large-2 small-12 columns small-text-center" id="browse">
           <ul class="inline-list" id="left">
-            <li><a href="#">EXPLORE</a></li>
+            <li><a href="explore.html">EXPLORE</a></li>
             <li><a href="#" data-reveal-id="CreateSignInModal">CREATE</a></li>
           </ul>
         </div>
-        <div class="large-5 small-12 columns small-text-center">
+        <div class="large-5 small-12 columns small-text-center" id="search_bar">
               <div class="row collapse postfix-round">
                 <div class="small-9 columns" class="nav-input">
                   <input type="text" placeholder="Name or type of campaign">
@@ -33,12 +35,10 @@
                 </div>
               </div>
         </div>
-        <div class="large-2 small-12 columns small-text-center">
+        <div class="large-2 small-12 columns small-text-center" id="sign">
           <ul class="inline-list" id="right">
-          <li><a href="#" data-reveal-id="SignInModal">Sign In</a>
+          <li><a href="#" data-reveal-id="SignInModal">Sign In / Sign Up</a>
           </li>
-          <li><a href="#" data-reveal-id="SignInModal">Sign Up</a>
-        </li>
           </ul>
         </div>
       </div>
@@ -56,169 +56,170 @@
       <div class="row">
         <div class="large-8 columns">
           <div id="Campaign_View"></div>
-            <h3 class="text-left">About The Recyclery</h3>
-                  <p class="text-left">Lorem ipsum dolor sit amet, duo ei meis animal petentium. Amet graeci utroque vim cu, in mel dolores neglegentur. Eum munere aeterno definiebas ea, nam mutat affert efficiantur an. Minim delenit eu cum, id eam iudico postulant, ne vis solum delenit.</p>
-                  <p class="text-left">Lorem ipsum dolor sit amet, duo ei meis animal petentium. Amet graeci utroque vim cu, in mel dolores neglegentur. Eum munere aeterno definiebas ea, nam mutat affert efficiantur an. Minim delenit eu cum, id eam iudico postulant, ne vis solum delenit. Lorem ipsum dolor sit amet, duo ei meis animal petentium. Amet graeci utroque vim cu, in mel dolores neglegentur. Eum munere aeterno definiebas ea, nam mutat affert efficiantur an. Minim delenit eu cum, id eam iudico postulant, ne vis solum delenit.</p>    
+            <h3 class="text-left">ABOUT THE RECYCLERY</h3>
+                  <p class="text-left">The Recyclery brings unsuspecting bike mechanics, environmental enthusiasts, and volunteers together in completing an unlikely task: restoring old and discarded bicycles. The program focuses on drawing students from area high schools to comprise diverse groups of bike-fixing volunteers. In these groups, students learn practical bike mechanics and creative problem solving from a local bike expert.</p>
+                  <p class="text-left">This year so far, the Recyclery has attracted over 65 new high school volunteers, which signifies rapid growth for the recently established program. Rapid growth not only means more progam participants, but also calls for more volunteers and donors! This is where you can make significant contributions, either in time or monetary donations.</p>    
+                  <p class="text-left">Jared, a senior in high school and enthusiastic program participant, fervently states that The Recyclery has not only piqued his interest in bikes, but also in making healthy, productive use of his time in general. "I used to think after school sports were the only option for me. I like participating in athletics, but the Recyclery combines this weird mix of nerdy and creative that I never thought I'd like, but now I know I love."
         </div>
           <div class="large-4 columns text-center doughnut">
-            <h3>Funding Progress</h3>
+            <h3>FUNDING PROGRESS</h3>
             <canvas id="TotalDonations" width="250" height="250"></canvas>
-            <h4>20.4% <span>funded</span></h4>
+            <h4 id="doughnut">20.4% <span>funded</span></h4>
             <h5>$1,112 of $5,500 raised <br> Accepting time donors</h5>
-               <label>DONATE NOW</label>
+              <div id="Donate_Call">
+               <h3>DONATE NOW</h3>
                 <a href="#" class="button expand" id="featurebutton" data-reveal-id="DonateTimeModal">Donate Time</a>
                 <a href="#" class="button expand" id=
                 "featurebutton" data-reveal-id="DonateMoneyModal">Donate Money</a>
-                <h3>Spread the word.</h3>
+              </div>
+              <div id="social_media">
+                <h4>Spread the word.</h4>
                 <ul class="no-bullet"> 
                   <li><a href="#"><img src="images/Facebook.png" alt="Share on Facebook"></a></li> 
                   <li><a href="#"><img src="images/LinkedIn.png" alt="Share on LinkedIn"></a></li> 
                   <li><a href="#"><img src="images/Twitter.png" alt="Share on Twitter"></a></li> 
                 </ul>
+              </div>
+          </div>
+      </div>
+    </section>
+    <section id="updates">
+      <div class="row">
+      <div class="large-12 columns" id="updates">
+        <h3>Campaign Updates</h3>
+      </div class="row">
+      </div>
+      <div>
+        <div class="row">
+            <div class="large-2 small-3 columns"><img src="images/CampaignOwner1.jpg"/>
+              <p>Martha Edwards</p>
+            </div>
+            <div class="large-10 columns">
+              <span>1 day ago</span>
+              <p>Thanks to everyone who donated! We're making good progress. Remember, if you don't have time to volunteer but would still like to demonstrate support, you are more than welcome to submit a monetary donation. Both forms of help make these programs and this campaign possible!</p>
+            </div>
+          </div>
+           <div class="row">
+            <div class="large-2 small-3 columns"><img src="images/CampaignOwner2.jpg"/>
+              <p>Emma Brooks</p>
+            </div>
+            <div class="large-10 columns">
+              <span>3 days ago</span>
+              <p> We've added two new time donors this week! Because of your generosity, we're able to kickstart our photography program, which runs three times per week. We are still accepting quite a few more volunteers, so if you're interested, submit the time donor form and you will be contacted with details shortly.</p>
+            </div>
+          </div>
+           <div class="row">
+            <div class="large-2 small-3 columns"><img src="images/CampaignOwner1.jpg"/>
+              <p>Martha Edwards</p>
+            </div>
+            <div class="large-10 columns">
+              <span>7 days ago</span>
+              <p>We just launched this Marvelmade campaign, and have already seen a good deal of support! If you'd like to know more about this campaign and time donor opportunities, stop by Williams High School at 5pm this coming Thursday. We'll fill you in :) Remember, you can donate either with your time in a volunteer capacity, or in the more traditional form of a monetary donation. Both are greatly appreciated, so thank you for considering!</p>
+            </div>
+          </div>
+           <div class="row">
+            <div class="large-2 small-3 columns"><img src="images/CampaignOwner2.jpg"/>
+              <p>Emma Brooks</p>
+            </div>
+            <div class="large-10 columns">
+              <span>12 days ago</span>
+              <p> Hello, world! We are beyond excited to start working toward improving and estabishing kick-ass afterschool programs. We will periodically post campaign updates and inform you of time donor information sessions. Be on the lookout.</p>
+            </div>
           </div>
       </div>
     </section>
 
 <!-- Campaign Summary End -->
 
-<!---- Comments & Updates ---->
+<!---- Comments ---->
 
-    <div id ="tabs">
-      <ul class="tabs" data-tab role="tablist">
-        <li class="tab-title active" role="presentational" ><a href="#panel2-1" role="tab" tabindex="0" aria-selected="true" controls="panel2-1">Updates</a></li>
-        <li class="tab-title" role="presentational" ><a href="#panel2-2" role="tab" tabindex="0"aria-selected="false" controls="panel2-2">Comments</a></li>
-      </ul>
+  <section id="comments">
+     <div class="row">
+      <div class="large-12 columns" id="comments">
+        <h3>Comments</h3>
+      </div>
     </div>
-
-      <div class="tabs-content">
-        <section role="tabpanel" aria-hidden="false" class="content active" id="panel2-1">     
+      <div class="container donor">
           <div class="row">
-            <div class="large-2 columns small-3 text-center"><img src="images/CampaignOwner1.jpg"/>
-              <p>Martha Edwards</p>
+            <div class="large-2 small-3 columns"><img src="images/Man2.jpg"/>
+              <p>Willie Holmes<br><em>Donor</em></p>
             </div>
             <div class="large-10 columns">
-              <p>Thanks to everyone who donated! We're making good progress. Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
-              <ul class="inline-list">
-                <li><a href="">Share</a></li>
-              </ul>
+              <span>1 day ago</span>
+              <p> Guys, this is exactly what public education needs. I'm down to donate in both ways. How often do you guys have information sessions regarding the volunteer opportunities?</p>
             </div>
-            <hr>
           </div>
+        </div>
+          <div class="container donor">
            <div class="row">
-            <div class="large-2 columns small-3 text-center"><img src="images/CampaignOwner2.jpg"/>
-              <p>Emma Brooks</p>
+            <div class="large-2 small-3 columns"><img src="images/Man3.jpg"/>
+              <p>Robert Miller<br><em>Donor</em></p>
             </div>
             <div class="large-10 columns">
-              <p> We've added two new time donors this week! Because of your generosity, we're able to kickstart our photography program.Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
-              <ul class="inline-list">
-                <li><a href="">Share</a></li>
-              </ul>
+              <span>1 day ago</span>
+              <p>What a creative campaign! I like that this platform allows for time and monetary donations, because they are both essential to getting these types of programs off the ground. I have no doubt that this will certainly be impactful. </p>
             </div>
-            <hr>
           </div>
+          </div>
+          <div class="container comment">
            <div class="row">
-            <div class="large-2 columns small-3 text-center"><img src="images/CampaignOwner1.jpg"/>
-              <p>Martha Edwards</p>
-            </div>
-            <div class="large-10 columns">
-              <p>We just launched this Marvelmade campaign, and have already seen a good deal of support! If you'd like to know more about this campaign and time donor opportunities, stop by Williams High School at 5pm this coming Thursday. We'll fill you in :) Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
-              <ul class="inline-list">
-                <li><a href="">Share</a></li>
-              </ul>
-            </div>
-            <hr>
-          </div>
-           <div class="row">
-            <div class="large-2 columns small-3 text-center"><img src="images/CampaignOwner2.jpg"/>
-              <p>Emma Brooks</p>
-            </div>
-            <div class="large-10 columns">
-              <p> Hello, world! We are beyond excited to start working toward improving and estabishing kick-ass afterschool programs.Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
-              <ul class="inline-list">
-                <li><a href="">Share</a></li>
-              </ul>
-            </div>
-            <hr>
-          </div>
-        </section>
-
-        <section role="tabpanel" aria-hidden="true" class="content" id="panel2-2">
-          <div class="row">
-            <div class="large-2 columns small-3 text-center"><img src="images/Man2.jpg"/>
-              <p>Willie Holmes</p>
-            </div>
-            <div class="large-10 columns">
-              <p> Guys, this is exactly what public education needs. I'm down to donate in both ways. Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
-              <ul class="inline-list">
-                <li><a href="">Share</a></li>
-              </ul>
-            </div>
-            <hr>
-          </div>
-           <div class="row">
-            <div class="large-2 columns small-3 text-center"><img src="images/Man3.jpg"/>
-              <p>Robert Miller</p>
-            </div>
-            <div class="large-10 columns">
-              <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
-              <ul class="inline-list">
-                <li><a href="">Share</a></li>
-              </ul>
-            </div>
-            <hr>
-          </div>
-           <div class="row">
-            <div class="large-2 columns small-3 text-center"><img src="images/Man1.jpg"/>
+            <div class="large-2 small-3 columns"><img src="images/Man1.jpg"/>
               <p>Austin Foster</p>
             </div>
             <div class="large-10 columns">
-              <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
-              <ul class="inline-list">
-                <li><a href="">Share</a></li>
-              </ul>
+              <span>2 days ago</span>
+              <p>Interesting concept. I'm definitely thinking about getting involved in a volunteer capacity. Thanks for putting this out there.</p>
             </div>
-            <hr>
           </div>
+          </div>
+          <div class="container comment">
            <div class="row">
-            <div class="large-2 columns small-3 text-center"><img src="images/Lady.jpg"/>
+            <div class="large-2 small-3 columns"><img src="images/Lady.jpg"/>
               <p>Lizzie Grant</p>
             </div>
             <div class="large-10 columns">
-              <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
-              <ul class="inline-list">
-                <li><a href="">Share</a></li>
-              </ul>
+              <span>4 days ago</span>
+              <p>Cool stuff. I'll be sure to tell people about this!</p>
             </div>
-            <hr>
           </div>
+          </div>
+        <div class="container owner">
           <div class="row">
-            <div class="large-2 columns small-3 text-center"><img src="images/Man4.jpg"/>
+            <div class="large-2 small-3 columns"><img src="images/CampaignOwner2.jpg"/>
+              <p>Emma Brooks<br><em>Campaign Owner</em></p>
+            </div>
+            <div class="large-10 columns">
+              <span>3 days ago</span>
+              <p> We've added two new time donors this week! Because of your generosity, we're able to kickstart our photography program, which runs three times per week. We are still accepting quite a few more volunteers, so if you're interested, submit the time donor form and you will be contacted with details shortly.</p>
+            </div>
+          </div>
+          </div>
+          <div class="container comment">
+          <div class="row">
+            <div class="large-2 small-3 columns"><img src="images/Man4.jpg"/>
               <p>Jesse Lucas</p>
             </div>
             <div class="large-10 columns">
-              <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
-              <ul class="inline-list">
-                <li><a href="">Share</a></li>
-              </ul>
+              <span>8 days ago</span>
+              <p>I definitely to donate. I'm going to tell a few friends, too.</p>
             </div>
-            <hr>
           </div>
+          </div>
+        <div class="container donor">
           <div class="row">
-            <div class="large-2 columns small-3 text-center"><img src="images/Dude.jpg"/>
-              <p>Sean Powell</p>
+            <div class="large-2 small-3 columns"><img src="images/Dude.jpg"/>
+              <p>Sean Powell<br><em>Donor</em></p>
             </div>
             <div class="large-10 columns">
-              <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
-              <ul class="inline-list">
-                <li><a href="">Share</a></li>
-              </ul>
+              <span>11 days ago</span>
+              <p>I just went to a time donor information session the other day...it was really well organized. For anyone who is viewing this campaign page, I would strongly consider donating in some way – these programs are going to be stellar.</p>
             </div>
-            <hr>
           </div>
+        </div>
         </section>
       </div>
     </div>
-<!-- Comments & Updates End -->
+<!-- Comments End -->
 
 
 <!-- Footer -->
@@ -399,7 +400,7 @@
                 <label>Password</label>
                 <input type="text" placeholder="Your password goes here" required>
               </form>
-              <a href="#" class="button">Sign In</a>
+              <a href="createcampaign.html" class="button">Sign In</a>
             </div>
             <div class="large-6 columns">
               <h4>Sign Up</h4>
@@ -415,7 +416,7 @@
                 <label>Confirm Password</label>
                 <input type="text" placeholder="One more time!" required>
               </form>
-              <a href="#" class="button">Sign Up</a>
+              <a href="createcampaign.html" class="button">Sign Up</a>
             </div>
           </div>
           <a class="close-reveal-modal" aria-label="Close">&#215;</a>
